@@ -2,51 +2,125 @@ name: Mantener vivos links de vids.st / Playmate
 
 on:
   schedule:
-    # Todos los lunes a las 09:00 UTC (~03:00 hora de Ciudad de Mexico).
-    - cron: '0 9 * * 1'
-  workflow_dispatch: {} # permite dispararlo a mano desde la pestaña Actions
+    - cron: '0 9 * * *'
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [nuevos-links-vidsst-playmate]
+
+concurrency:
+  group: keepalive-vistas
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
-  keepalive:
+  plan:
     runs-on: ubuntu-latest
-    # Cada link se reproduce ~3 minutos (SEGUNDOS_REPRODUCCION en el script) --
-    # con varios links esto puede tardar bastante. Si tenes muchos links
-    # subidos y el job se corta por tiempo, subi este numero.
-    timeout-minutes: 180
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      hayTrabajo: ${{ steps.plan.outputs.hayTrabajo }}
     steps:
-      - name: Bajar el repo (para leer los JSON de links)
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Configurar Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Instalar dependencias (Playwright)
+      - name: Calcular que links estan debidos hoy
+        id: plan
+        run: node scripts/plan-vistas.mjs
+
+      - name: Guardar altas nuevas en vistas-estado.json
+        run: |
+          if ! git diff --quiet -- vistas-estado.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add vistas-estado.json
+            git commit -m "Plan: registrar links nuevos detectados hoy"
+            git push
+          fi
+
+  vistas:
+    needs: plan
+    if: needs.plan.outputs.hayTrabajo == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
         working-directory: scripts
         run: npm install
 
-      - name: Instalar Chromium para Playwright
+      - name: Instalar Chromium
         working-directory: scripts
         run: npx playwright install --with-deps chromium
 
-      - name: Darle vista real (con navegador) a cada link
-        working-directory: .
+      - name: Escribir la porcion de links de este job
+        run: echo '${{ toJson(matrix.chunk.urls) }}' > urls-a-procesar.json
+
+      - name: Darle vista a esta porcion
         env:
+          ARCHIVO_URLS_A_PROCESAR: urls-a-procesar.json
+          ARCHIVO_RESULTADOS: resultados.json
           SEGUNDOS_REPRODUCCION: '180'
-          CONCURRENCIA: '2'
+          CONCURRENCIA: '3'
         run: node scripts/keepalive-vistas.mjs
 
-      # Capturas de los links donde no se encontro el <video> -- se suben
-      # SIEMPRE (if: always), incluso si el paso de arriba termino con
-      # links fallidos, para poder ver que se encontro el navegador ahi.
-      # Si no hubo ningun SIN-VIDEO no se genera la carpeta y este paso no
-      # sube nada (no rompe el job).
-      - name: Subir capturas de diagnostico (si hubo links sin video)
+      - name: Subir resultado
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: capturas-sin-video
+          name: resultados-${{ matrix.chunk.indice }}
+          path: resultados.json
+          retention-days: 7
+
+      - name: Subir capturas de diagnostico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-sin-video-${{ matrix.chunk.indice }}
           path: screenshots/
           if-no-files-found: ignore
           retention-days: 7
+
+  guardar:
+    needs: [plan, vistas]
+    if: always() && needs.plan.outputs.hayTrabajo == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Bajar resultados de todos los jobs
+        uses: actions/download-artifact@v4
+        with:
+          pattern: resultados-*
+          path: resultados-descargados
+
+      - name: Actualizar ultimaVista
+        run: node scripts/guardar-estado.mjs
+
+      - name: Commitear estado final
+        run: |
+          if ! git diff --quiet -- vistas-estado.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add vistas-estado.json
+            git commit -m "Actualizar fechas de ultima vista"
+            git push
+          fi
