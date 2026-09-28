@@ -1,5 +1,5 @@
 import { chromium } from 'playwright';
-import { readFile } from 'node:fs/promises';
+import { readFile, mkdir } from 'node:fs/promises';
 
 // vids.st/firestream/playmate solo cuentan una "vista" real despues de que
 // el video este reproduciendose un rato (2-3 minutos aprox, confirmado a
@@ -86,7 +86,7 @@ const SELECTORES_PLAY = [
   '[class*="jw-display-icon-container"]',
 ];
 
-async function intentarReproducir(pagina) {
+async function intentarReproducir(pagina, ultimoIntento = false) {
   for (const frame of pagina.frames()) {
     try {
       const arranco = await frame.evaluate(() => {
@@ -107,6 +107,18 @@ async function intentarReproducir(pagina) {
       } catch {}
     }
   }
+  // Ultimo recurso: muchos reproductores envueltos en publicidad no usan
+  // ningun boton reconocible, sino que TODA el area del video es
+  // clickeable (a veces hasta abre un popup de publicidad con el primer
+  // click, que ya se cierra solo via el listener de "page" mas abajo) --
+  // se prueba solo en el ultimo intento para no gastar clicks de mas.
+  if (ultimoIntento) {
+    for (const frame of pagina.frames()) {
+      try {
+        await frame.locator('body').click({ timeout: 1500 }); // click al centro por defecto
+      } catch {}
+    }
+  }
   return false;
 }
 
@@ -123,6 +135,10 @@ async function obtenerTiempoActual(pagina) {
   return null;
 }
 
+function nombreSeguro(url) {
+  return url.replace(/^https?:\/\//, '').replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 120);
+}
+
 async function darVistaConNavegador(navegador, embedUrl) {
   const contexto = await navegador.newContext({ userAgent: UA });
   const pagina = await contexto.newPage();
@@ -137,13 +153,27 @@ async function darVistaConNavegador(navegador, embedUrl) {
     await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
-    let arranco = await intentarReproducir(pagina);
-    if (!arranco) {
-      await pagina.waitForTimeout(3000);
-      arranco = await intentarReproducir(pagina);
+    // Diagnostico: que iframes cargo esta pagina realmente -- ayuda a ver
+    // si el reproductor esta en un iframe con otro dominio (a veces uno de
+    // publicidad) o si directamente no cargo ningun iframe.
+    console.log(`[frames] ${embedUrl} -> ${pagina.frames().map((f) => f.url()).join(' | ')}`);
+
+    // Varios intentos espaciados en vez de dos seguidos -- algunos
+    // reproductores tardan bastante en insertar el <video> real (cadenas
+    // de redireccion de publicidad antes de mostrar el player).
+    let arranco = false;
+    for (let intento = 1; intento <= 5 && !arranco; intento++) {
+      arranco = await intentarReproducir(pagina, intento === 5);
+      if (!arranco) await pagina.waitForTimeout(4000);
     }
     if (!arranco) {
       console.log(`SIN-VIDEO [${embedUrl}] no se encontro un <video> para reproducir`);
+      try {
+        await mkdir('screenshots', { recursive: true });
+        await pagina.screenshot({ path: `screenshots/${nombreSeguro(embedUrl)}.png`, fullPage: true });
+      } catch (e) {
+        console.log(`(no se pudo guardar captura: ${e.message})`);
+      }
       return false;
     }
 
