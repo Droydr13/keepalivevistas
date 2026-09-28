@@ -154,13 +154,16 @@ function nombreSeguro(url) {
 
 // vids.st "reproduce" perfecto (currentTime llega a 180s) pero la vista
 // real no sube, y firestream directamente devuelve "about:blank" en vez de
-// la pagina -- los dos son la firma tipica de un sitio que chequea con
-// JavaScript si el navegador es automatizado (navigator.webdriver = true
-// es la marca que deja Playwright/Chromium por defecto) y, si lo detecta,
-// bloquea la pagina entera (firestream) o deja que el video se vea pero no
-// dispara el aviso de "vista real" que le llega al servidor (vids.st). Este
-// script esconde esa marca y algunas otras señales tipicas ANTES de que
-// cargue cualquier script de la pagina.
+// la pagina -- los dos son la firma tipica de un sitio que chequea si el
+// navegador es automatizado. navigator.webdriver es la marca mas conocida,
+// pero el log real de firestream mostro algo mas concreto: uno de sus
+// scripts de publicidad arma un pedido con "HeadlessChrome" LITERAL en la
+// info del navegador (lo que en Chrome se llama "User-Agent Client
+// Hints") y ahi mismo la respuesta vuelve con 403 Forbidden -- es decir,
+// se estaba delatando solo aunque el navigator.webdriver ya estuviera
+// escondido, porque es una señal totalmente distinta (Client Hints, no
+// navigator.webdriver). Esta funcion esconde las dos cosas, y algunas
+// señales mas, ANTES de que cargue cualquier script de la pagina.
 async function ocultarMarcasDeAutomatizacion(contexto) {
   await contexto.addInitScript(() => {
     Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
@@ -174,11 +177,53 @@ async function ocultarMarcasDeAutomatizacion(contexto) {
           ? Promise.resolve({ state: Notification.permission })
           : consultaOriginal(parametros);
     }
+    // navigator.userAgentData.brands es la version accesible por
+    // JavaScript de esas mismas Client Hints -- por mas que el header
+    // HTTP se pise (ver extraHTTPHeaders al armar el contexto), si un
+    // script de la pagina la lee por JS igual puede ver "HeadlessChrome"
+    // ahi si no se tapa tambien esto.
+    try {
+      if (navigator.userAgentData) {
+        const proto = Object.getPrototypeOf(navigator.userAgentData);
+        const marcasFalsas = [
+          { brand: 'Not.A/Brand', version: '24' },
+          { brand: 'Chromium', version: '125' },
+          { brand: 'Google Chrome', version: '125' },
+        ];
+        Object.defineProperty(proto, 'brands', { get: () => marcasFalsas });
+        Object.defineProperty(proto, 'mobile', { get: () => false });
+        Object.defineProperty(proto, 'platform', { get: () => 'Windows' });
+        const altaOriginal = proto.getHighEntropyValues;
+        proto.getHighEntropyValues = function (hints) {
+          return altaOriginal.call(this, hints)
+            .then((real) => ({
+              ...real,
+              brands: marcasFalsas,
+              fullVersionList: marcasFalsas.map((m) => ({ ...m, version: `${m.version}.0.0.0` })),
+              platform: 'Windows',
+              platformVersion: '10.0',
+              mobile: false,
+            }))
+            .catch(() => ({ brands: marcasFalsas, mobile: false, platform: 'Windows' }));
+        };
+      }
+    } catch {}
   });
 }
 
 async function darVistaConNavegador(navegador, embedUrl) {
-  const contexto = await navegador.newContext({ userAgent: UA });
+  const contexto = await navegador.newContext({
+    userAgent: UA,
+    // Chrome manda estos headers de "Client Hints" en CADA pedido aparte
+    // del User-Agent normal, y Chromium los arma solo -- pisarlos aca es
+    // lo que hace que el header HTTP en si tampoco diga "HeadlessChrome"
+    // (la parte JS de esto se tapa en ocultarMarcasDeAutomatizacion).
+    extraHTTPHeaders: {
+      'sec-ch-ua': '"Chromium";v="125", "Not.A/Brand";v="24", "Google Chrome";v="125"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+    },
+  });
   await ocultarMarcasDeAutomatizacion(contexto);
   const pagina = await contexto.newPage();
 
@@ -316,9 +361,12 @@ async function main() {
   // --disable-blink-features=AutomationControlled apaga (ademas del
   // Object.defineProperty de arriba) otras señales internas de Chromium
   // que delatan que es un navegador manejado por automatizacion.
+  // --headless=new fuerza el modo "headless nuevo" de Chrome, que en
+  // general se parece mas a un Chrome de escritorio real que el headless
+  // viejo (el que mostraba "HeadlessChrome" en varios lados).
   const navegador = await chromium.launch({
     headless: true,
-    args: ['--disable-blink-features=AutomationControlled'],
+    args: ['--disable-blink-features=AutomationControlled', '--headless=new'],
   });
   const resultados = [];
   try {
