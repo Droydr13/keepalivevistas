@@ -36,3 +36,17 @@ jobs:
           SEGUNDOS_REPRODUCCION: '180'
           CONCURRENCIA: '2'
         run: node scripts/keepalive-vistas.mjs
+
+      # Capturas de los links donde no se encontro el <video> -- se suben
+      # SIEMPRE (if: always), incluso si el paso de arriba termino con
+      # links fallidos, para poder ver que se encontro el navegador ahi.
+      # Si no hubo ningun SIN-VIDEO no se genera la carpeta y este paso no
+      # sube nada (no rompe el job).
+      - name: Subir capturas de diagnostico (si hubo links sin video)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-sin-video
+          path: screenshots/
+          if-no-files-found: ignore
+          retention-days: 7
