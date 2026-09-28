@@ -175,13 +175,41 @@ async function darVistaConNavegador(navegador, embedUrl) {
     try { await nueva.close(); } catch {}
   });
 
+  // Diagnostico extra para el caso "about:blank" (firestream) -- si la
+  // pagina principal termina en blanco no sabemos si fue un redirect, un
+  // bloqueo por CSP, un pedido que fallo en la red, o un error de
+  // JavaScript de la pagina misma. Esto lo deja registrado sin adivinar.
+  const pedidosFallidos = [];
+  pagina.on('requestfailed', (req) => {
+    if (req.frame() === pagina.mainFrame()) {
+      pedidosFallidos.push(`${req.method()} ${req.url()} -> ${req.failure()?.errorText || 'sin detalle'}`);
+    }
+  });
+  const erroresConsola = [];
+  pagina.on('console', (msg) => {
+    if (msg.type() === 'error') erroresConsola.push(msg.text());
+  });
+  pagina.on('crash', () => console.log(`[crash] ${embedUrl} la pestana se cayo`));
+
   try {
-    await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    const respuesta = await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
-    // Diagnostico: que iframes cargo esta pagina realmente -- ayuda a ver
-    // si el reproductor esta en un iframe con otro dominio (a veces uno de
-    // publicidad) o si directamente no cargo ningun iframe.
+    // Diagnostico: que respondio el pedido principal (status + URL final
+    // despues de redirects, si hubo) y que iframes cargo esta pagina
+    // realmente -- ayuda a ver si el reproductor esta en un iframe con otro
+    // dominio (a veces uno de publicidad) o si directamente no cargo
+    // ningun iframe.
+    console.log(
+      `[nav] ${embedUrl} -> status ${respuesta ? respuesta.status() : 'sin respuesta'}` +
+      `, url final: ${respuesta ? respuesta.url() : pagina.url()}`
+    );
+    if (pedidosFallidos.length) {
+      console.log(`[requestfailed] ${embedUrl} -> ${pedidosFallidos.join(' ; ')}`);
+    }
+    if (erroresConsola.length) {
+      console.log(`[console-error] ${embedUrl} -> ${erroresConsola.slice(0, 5).join(' ; ')}`);
+    }
     console.log(`[frames] ${embedUrl} -> ${pagina.frames().map((f) => f.url()).join(' | ')}`);
 
     // Varios intentos espaciados en vez de dos seguidos -- algunos
