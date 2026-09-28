@@ -1,9 +1,10 @@
 import { chromium } from 'playwright';
 import { readFile, mkdir } from 'node:fs/promises';
 
-// vids.st/firestream/playmate solo cuentan una "vista" real despues de que
+// vids.st/playmate solo cuentan una "vista" real despues de que
 // el video este reproduciendose un rato (2-3 minutos aprox, confirmado a
-// mano probando los tres) -- pedirle el archivo directo (con o sin Range)
+// mano probando los dos -- firestream tambien funcionaba asi pero se saco
+// de este script, ver comentario mas abajo) -- pedirle el archivo directo (con o sin Range)
 // no dispara nada de esto, el conteo lo hace el REPRODUCTOR de la pagina
 // mientras corre, no el archivo en si. Por eso este script abre cada
 // embed con un navegador de verdad (headless) y lo deja "reproduciendo"
@@ -17,29 +18,23 @@ const SEGUNDOS_REPRODUCCION = parseInt(process.env.SEGUNDOS_REPRODUCCION || '180
 // todo junto.
 const CONCURRENCIA = parseInt(process.env.CONCURRENCIA || '2', 10);
 
-// firestream en particular es MUY pesado de anuncios: confirmado a mano
-// por el usuario que tuvo que cerrar ~20 ventanas emergentes y anuncios
-// encima del video antes de que el reproductor real apareciera. Por eso la
-// busqueda inicial del <video> no se rinde rapido -- reintenta clickeando
-// de forma agresiva durante bastante tiempo antes de declarar SIN-VIDEO.
-const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '150', 10);
-
 // Techo duro por link, por si un sitio deja la pagina colgada del todo (un
 // interstitial que nunca resuelve ni con reintentos) -- sin esto, un solo
 // link trabado se comeria el resto del tiempo del job entero.
+const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '30', 10);
 const TOPE_POR_LINK_MS = (SEGUNDOS_REPRODUCCION + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
 
-// vids.st y firestream: NO se usa "url" (el archivo ya resuelto) -- se
-// confirmo a mano que el archivo directo no cuenta como vista para
-// ninguno de los dos. Se usa "referer", que ya se guarda desde antes (hoy
-// solo se usaba como header al pedir el archivo) y que es el embed
-// ORIGINAL que subiste -- para vids.st especificamente, tiene que ser la
-// version /e/ (la /v/ tampoco cuenta, confirmado a mano).
+// vids.st: NO se usa "url" (el archivo ya resuelto) -- se confirmo a mano
+// que el archivo directo no cuenta como vista. Se usa "referer", que ya se
+// guarda desde antes (hoy solo se usaba como header al pedir el archivo) y
+// que es el embed ORIGINAL que subiste -- tiene que ser la version /e/ (la
+// /v/ no cuenta, confirmado a mano). firestream se saco de este sistema:
+// confirmado (por el usuario, probando a mano en su propio navegador) que
+// el sitio es demasiado pesado de publicidad/popups como para automatizarlo
+// de forma confiable.
 const ARCHIVOS_DIRECTOS = [
   'vids-manual-links.json',
   'vids-direct-contribuciones.json',
-  'firestream-manual-links.json',
-  'firestream-contribuciones.json',
 ];
 
 // Playmate: el embed original (embedUrl), mismo campo que ya lee el resto
