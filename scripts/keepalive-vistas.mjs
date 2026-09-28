@@ -1,5 +1,6 @@
 import { chromium } from 'playwright';
 import { readFile, mkdir } from 'node:fs/promises';
+import http from 'node:http';
 
 // vids.st/firestream/playmate solo cuentan una "vista" real despues de que
 // el video este reproduciendose un rato (2-3 minutos aprox, confirmado a
@@ -152,6 +153,42 @@ function nombreSeguro(url) {
   return url.replace(/^https?:\/\//, '').replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 120);
 }
 
+// El log real de firestream mostro un patron distinto al de vids.st y
+// playmate: la pagina llega bien (200) pero termina en blanco con un 403
+// en algun pedido, y SIEMPRE con "parent_ref=" vacio en la URL final --
+// esto es la firma tipica de un embed que exige venir cargado DENTRO de un
+// iframe (no accedido directo por su cuenta), algo que un navegador manda
+// solo mediante el header "Sec-Fetch-Dest: iframe" (mas, a veces, el
+// Referer de quien lo esta embebiendo). Probado a mano en un mock local:
+// accediendo directo no aparece el <video>, pero envuelto en un iframe
+// si. Por eso, solo para firestream, en vez de navegar directo al embed
+// se navega a una paginita local que lo carga adentro de un iframe -- asi
+// el pedido real le llega al sitio con esas señales de "vengo embebido",
+// como en un uso normal.
+function necesitaEnvoltorioIframe(url) {
+  return /firestream\.(to|site)/i.test(url);
+}
+
+async function iniciarServidorEnvoltorio() {
+  const servidor = http.createServer((req, res) => {
+    const parametros = new URL(req.url, 'http://localhost');
+    const objetivo = parametros.searchParams.get('objetivo');
+    if (!objetivo) {
+      res.writeHead(400);
+      res.end('falta ?objetivo=');
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end(
+      `<!doctype html><html><body style="margin:0">` +
+      `<iframe src="${objetivo}" style="width:100vw;height:100vh;border:0" allow="autoplay"></iframe>` +
+      `</body></html>`
+    );
+  });
+  await new Promise((resolve) => servidor.listen(0, '127.0.0.1', resolve));
+  return { servidor, puerto: servidor.address().port };
+}
+
 // vids.st "reproduce" perfecto (currentTime llega a 180s) pero la vista
 // real no sube, y firestream directamente devuelve "about:blank" en vez de
 // la pagina -- los dos son la firma tipica de un sitio que chequea si el
@@ -211,7 +248,12 @@ async function ocultarMarcasDeAutomatizacion(contexto) {
   });
 }
 
-async function darVistaConNavegador(navegador, embedUrl) {
+async function darVistaConNavegador(navegador, embedUrl, puertoEnvoltorio) {
+  const envuelveEnIframe = puertoEnvoltorio && necesitaEnvoltorioIframe(embedUrl);
+  const urlNavegacion = envuelveEnIframe
+    ? `http://127.0.0.1:${puertoEnvoltorio}/?objetivo=${encodeURIComponent(embedUrl)}`
+    : embedUrl;
+
   const contexto = await navegador.newContext({
     userAgent: UA,
     // Chrome manda estos headers de "Client Hints" en CADA pedido aparte
@@ -270,7 +312,10 @@ async function darVistaConNavegador(navegador, embedUrl) {
   pagina.on('crash', () => console.log(`[crash] ${embedUrl} la pestana se cayo`));
 
   try {
-    const respuesta = await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    if (envuelveEnIframe) {
+      console.log(`[envoltorio] ${embedUrl} -> se carga adentro de un iframe (no directo)`);
+    }
+    const respuesta = await pagina.goto(urlNavegacion, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
     // Diagnostico: que respondio el pedido principal (status + URL final
@@ -368,17 +413,19 @@ async function main() {
     headless: true,
     args: ['--disable-blink-features=AutomationControlled', '--headless=new'],
   });
+  const { servidor: servidorEnvoltorio, puerto: puertoEnvoltorio } = await iniciarServidorEnvoltorio();
   const resultados = [];
   try {
     for (let i = 0; i < embeds.length; i += CONCURRENCIA) {
       const lote = embeds.slice(i, i + CONCURRENCIA);
       const lote_resultados = await Promise.all(
-        lote.map((url) => conTope(darVistaConNavegador(navegador, url), TOPE_POR_LINK_MS, url))
+        lote.map((url) => conTope(darVistaConNavegador(navegador, url, puertoEnvoltorio), TOPE_POR_LINK_MS, url))
       );
       lote.forEach((url, idx) => resultados.push({ url, ok: lote_resultados[idx] }));
     }
   } finally {
     await navegador.close();
+    servidorEnvoltorio.close();
   }
 
   const exitosos = resultados.filter((r) => r.ok).length;
