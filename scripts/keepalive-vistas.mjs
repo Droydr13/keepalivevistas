@@ -1,6 +1,5 @@
 import { chromium } from 'playwright';
 import { readFile, mkdir } from 'node:fs/promises';
-import http from 'node:http';
 
 // vids.st/firestream/playmate solo cuentan una "vista" real despues de que
 // el video este reproduciendose un rato (2-3 minutos aprox, confirmado a
@@ -18,10 +17,17 @@ const SEGUNDOS_REPRODUCCION = parseInt(process.env.SEGUNDOS_REPRODUCCION || '180
 // todo junto.
 const CONCURRENCIA = parseInt(process.env.CONCURRENCIA || '2', 10);
 
-// Techo duro por link, por si un sitio deja la pagina colgada (un
-// interstitial de publicidad que nunca resuelve, por ejemplo) -- sin esto,
-// un solo link trabado se comeria el resto del tiempo del job entero.
-const TOPE_POR_LINK_MS = (SEGUNDOS_REPRODUCCION + 90) * 1000;
+// firestream en particular es MUY pesado de anuncios: confirmado a mano
+// por el usuario que tuvo que cerrar ~20 ventanas emergentes y anuncios
+// encima del video antes de que el reproductor real apareciera. Por eso la
+// busqueda inicial del <video> no se rinde rapido -- reintenta clickeando
+// de forma agresiva durante bastante tiempo antes de declarar SIN-VIDEO.
+const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '150', 10);
+
+// Techo duro por link, por si un sitio deja la pagina colgada del todo (un
+// interstitial que nunca resuelve ni con reintentos) -- sin esto, un solo
+// link trabado se comeria el resto del tiempo del job entero.
+const TOPE_POR_LINK_MS = (SEGUNDOS_REPRODUCCION + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
 
 // vids.st y firestream: NO se usa "url" (el archivo ya resuelto) -- se
 // confirmo a mano que el archivo directo no cuenta como vista para
@@ -100,7 +106,7 @@ function recolectarFrames(paginas) {
   });
 }
 
-async function intentarReproducir(frames, ultimoIntento = false) {
+async function intentarReproducir(frames, clickearCuerpo = false) {
   for (const frame of frames) {
     try {
       const arranco = await frame.evaluate(() => {
@@ -121,12 +127,15 @@ async function intentarReproducir(frames, ultimoIntento = false) {
       } catch {}
     }
   }
-  // Ultimo recurso: muchos reproductores envueltos en publicidad no usan
-  // ningun boton reconocible, sino que TODA el area del video es
-  // clickeable (a veces hasta abre un popup de publicidad con el primer
-  // click, que ya se decide mas abajo si se conserva o se cierra) --
-  // se prueba solo en el ultimo intento para no gastar clicks de mas.
-  if (ultimoIntento) {
+  // Muchos reproductores envueltos en publicidad no usan ningun boton
+  // reconocible, sino que TODA el area del video es clickeable (a veces
+  // hasta abre un popup de publicidad con el click, que se decide mas
+  // abajo si se conserva o se cierra). Confirmado a mano que firestream en
+  // particular necesita VARIOS de estos clicks seguidos (cerrando
+  // anuncios de por medio) antes de que aparezca el reproductor real --
+  // por eso, a diferencia de antes, esto se puede pedir en CADA intento y
+  // no solo en el ultimo.
+  if (clickearCuerpo) {
     for (const frame of frames) {
       try {
         await frame.locator('body').click({ timeout: 1500 }); // click al centro por defecto
@@ -151,42 +160,6 @@ async function obtenerTiempoActual(frames) {
 
 function nombreSeguro(url) {
   return url.replace(/^https?:\/\//, '').replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 120);
-}
-
-// El log real de firestream mostro un patron distinto al de vids.st y
-// playmate: la pagina llega bien (200) pero termina en blanco con un 403
-// en algun pedido, y SIEMPRE con "parent_ref=" vacio en la URL final --
-// esto es la firma tipica de un embed que exige venir cargado DENTRO de un
-// iframe (no accedido directo por su cuenta), algo que un navegador manda
-// solo mediante el header "Sec-Fetch-Dest: iframe" (mas, a veces, el
-// Referer de quien lo esta embebiendo). Probado a mano en un mock local:
-// accediendo directo no aparece el <video>, pero envuelto en un iframe
-// si. Por eso, solo para firestream, en vez de navegar directo al embed
-// se navega a una paginita local que lo carga adentro de un iframe -- asi
-// el pedido real le llega al sitio con esas señales de "vengo embebido",
-// como en un uso normal.
-function necesitaEnvoltorioIframe(url) {
-  return /firestream\.(to|site)/i.test(url);
-}
-
-async function iniciarServidorEnvoltorio() {
-  const servidor = http.createServer((req, res) => {
-    const parametros = new URL(req.url, 'http://localhost');
-    const objetivo = parametros.searchParams.get('objetivo');
-    if (!objetivo) {
-      res.writeHead(400);
-      res.end('falta ?objetivo=');
-      return;
-    }
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end(
-      `<!doctype html><html><body style="margin:0">` +
-      `<iframe src="${objetivo}" style="width:100vw;height:100vh;border:0" allow="autoplay"></iframe>` +
-      `</body></html>`
-    );
-  });
-  await new Promise((resolve) => servidor.listen(0, '127.0.0.1', resolve));
-  return { servidor, puerto: servidor.address().port };
 }
 
 // vids.st "reproduce" perfecto (currentTime llega a 180s) pero la vista
@@ -248,12 +221,7 @@ async function ocultarMarcasDeAutomatizacion(contexto) {
   });
 }
 
-async function darVistaConNavegador(navegador, embedUrl, puertoEnvoltorio) {
-  const envuelveEnIframe = puertoEnvoltorio && necesitaEnvoltorioIframe(embedUrl);
-  const urlNavegacion = envuelveEnIframe
-    ? `http://127.0.0.1:${puertoEnvoltorio}/?objetivo=${encodeURIComponent(embedUrl)}`
-    : embedUrl;
-
+async function darVistaConNavegador(navegador, embedUrl) {
   const contexto = await navegador.newContext({
     userAgent: UA,
     // Chrome manda estos headers de "Client Hints" en CADA pedido aparte
@@ -310,12 +278,18 @@ async function darVistaConNavegador(navegador, embedUrl, puertoEnvoltorio) {
     if (msg.type() === 'error') erroresConsola.push(msg.text());
   });
   pagina.on('crash', () => console.log(`[crash] ${embedUrl} la pestana se cayo`));
+  // A diferencia de [console-error] (que solo dice "hubo un 403" sin decir
+  // de que pedido), esto anota la URL exacta de cualquier respuesta 4xx/5xx
+  // en CUALQUIER frame de esta pestaña -- necesario para saber si el
+  // rechazo es de un script de publicidad (no importa mucho) o del propio
+  // pedido que carga el reproductor (ahi si importa).
+  const respuestasConError = [];
+  pagina.on('response', (resp) => {
+    if (resp.status() >= 400) respuestasConError.push(`${resp.status()} ${resp.url()}`);
+  });
 
   try {
-    if (envuelveEnIframe) {
-      console.log(`[envoltorio] ${embedUrl} -> se carga adentro de un iframe (no directo)`);
-    }
-    const respuesta = await pagina.goto(urlNavegacion, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    const respuesta = await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
     // Diagnostico: que respondio el pedido principal (status + URL final
@@ -333,17 +307,31 @@ async function darVistaConNavegador(navegador, embedUrl, puertoEnvoltorio) {
     if (erroresConsola.length) {
       console.log(`[console-error] ${embedUrl} -> ${erroresConsola.slice(0, 5).join(' ; ')}`);
     }
+    if (respuestasConError.length) {
+      console.log(`[respuestas-error] ${embedUrl} -> ${respuestasConError.slice(0, 8).join(' ; ')}`);
+    }
     console.log(`[frames] ${embedUrl} -> ${recolectarFrames(paginasVistas).map((f) => f.url()).join(' | ')}`);
 
-    // Varios intentos espaciados en vez de dos seguidos -- algunos
-    // reproductores tardan bastante en insertar el <video> real (cadenas
-    // de redireccion de publicidad antes de mostrar el player, o abren la
-    // pestaña nueva recien despues de un par de segundos).
+    // Confirmado a mano por el usuario (probando firestream el mismo en su
+    // propio navegador): el video real NO aparece rapido -- hay que ir
+    // cerrando ventanas emergentes y anuncios sucesivos (el usuario conto
+    // que le tomo ~20 veces) antes de que el reproductor real cargue. Por
+    // eso esto reintenta clickeando de forma agresiva (no solo buscar el
+    // <video>, sino tambien clickear como si se estuviera cerrando
+    // anuncios) durante bastante tiempo en vez de rendirse a los pocos
+    // segundos.
+    const inicioBusqueda = Date.now();
     let arranco = false;
-    for (let intento = 1; intento <= 5 && !arranco; intento++) {
-      arranco = await intentarReproducir(recolectarFrames(paginasVistas), intento === 5);
-      if (!arranco) await pagina.waitForTimeout(4000);
+    let intentos = 0;
+    while (!arranco && Date.now() - inicioBusqueda < SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO * 1000) {
+      intentos++;
+      arranco = await intentarReproducir(recolectarFrames(paginasVistas), true);
+      if (!arranco) await pagina.waitForTimeout(3000);
     }
+    console.log(
+      `[busqueda-video] ${embedUrl} -> ${intentos} intento(s) en ~${Math.round((Date.now() - inicioBusqueda) / 1000)}s` +
+      ` (${arranco ? 'encontrado' : 'no encontrado'})`
+    );
     if (!arranco) {
       console.log(`SIN-VIDEO [${embedUrl}] no se encontro un <video> para reproducir`);
       try {
@@ -413,19 +401,17 @@ async function main() {
     headless: true,
     args: ['--disable-blink-features=AutomationControlled', '--headless=new'],
   });
-  const { servidor: servidorEnvoltorio, puerto: puertoEnvoltorio } = await iniciarServidorEnvoltorio();
   const resultados = [];
   try {
     for (let i = 0; i < embeds.length; i += CONCURRENCIA) {
       const lote = embeds.slice(i, i + CONCURRENCIA);
       const lote_resultados = await Promise.all(
-        lote.map((url) => conTope(darVistaConNavegador(navegador, url, puertoEnvoltorio), TOPE_POR_LINK_MS, url))
+        lote.map((url) => conTope(darVistaConNavegador(navegador, url), TOPE_POR_LINK_MS, url))
       );
       lote.forEach((url, idx) => resultados.push({ url, ok: lote_resultados[idx] }));
     }
   } finally {
     await navegador.close();
-    servidorEnvoltorio.close();
   }
 
   const exitosos = resultados.filter((r) => r.ok).length;
