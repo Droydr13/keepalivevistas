@@ -1,5 +1,6 @@
 import { chromium } from 'playwright';
-import { readFile, mkdir } from 'node:fs/promises';
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { recolectarEmbeds } from './fuentes.mjs';
 
 // vids.st/playmate solo cuentan una "vista" real despues de que
 // el video este reproduciendose un rato (2-3 minutos aprox, confirmado a
@@ -24,53 +25,22 @@ const CONCURRENCIA = parseInt(process.env.CONCURRENCIA || '2', 10);
 const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '30', 10);
 const TOPE_POR_LINK_MS = (SEGUNDOS_REPRODUCCION + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
 
-// vids.st: NO se usa "url" (el archivo ya resuelto) -- se confirmo a mano
-// que el archivo directo no cuenta como vista. Se usa "referer", que ya se
-// guarda desde antes (hoy solo se usaba como header al pedir el archivo) y
-// que es el embed ORIGINAL que subiste -- tiene que ser la version /e/ (la
-// /v/ no cuenta, confirmado a mano). firestream se saco de este sistema:
-// confirmado (por el usuario, probando a mano en su propio navegador) que
-// el sitio es demasiado pesado de publicidad/popups como para automatizarlo
-// de forma confiable.
-const ARCHIVOS_DIRECTOS = [
-  'vids-manual-links.json',
-  'vids-direct-contribuciones.json',
-];
-
-// Playmate: el embed original (embedUrl), mismo campo que ya lee el resto
-// del sistema.
-const ARCHIVOS_PLAYMATE = [
-  'playmate-manual-links.json',
-  'playmate-contribuciones.json',
-];
+// La lista de que archivos leer y que campo usar en cada uno (vids.st:
+// "referer" / playmate: "embedUrl") vive en fuentes.mjs, compartida con
+// plan-vistas.mjs -- asi los dos scripts nunca pueden quedar mirando datos
+// distintos.
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36';
 
-async function leerJsonSiExiste(ruta) {
-  try {
-    const texto = await readFile(ruta, 'utf8');
-    const datos = JSON.parse(texto);
-    return Array.isArray(datos) ? datos : [];
-  } catch (e) {
-    if (e.code !== 'ENOENT') console.warn(`No se pudo leer ${ruta}: ${e.message}`);
-    return [];
-  }
-}
-
-async function recolectarEmbeds() {
-  const embeds = new Set();
-  for (const archivo of ARCHIVOS_DIRECTOS) {
-    for (const item of await leerJsonSiExiste(archivo)) {
-      if (item && item.referer) embeds.add(item.referer);
-    }
-  }
-  for (const archivo of ARCHIVOS_PLAYMATE) {
-    for (const item of await leerJsonSiExiste(archivo)) {
-      if (item && item.embedUrl) embeds.add(item.embedUrl);
-    }
-  }
-  return [...embeds];
-}
+// Modo "matrix": en vez de escanear los JSON completos (que es lo que hace
+// recolectarEmbeds, usado cuando se corre este script suelto/a mano), el
+// workflow de GitHub Actions calcula de antemano QUE links estan debidos
+// (ver plan-vistas.mjs) y le pasa a cada job del matrix solo su porcion en
+// un archivo aparte -- asi varios jobs en paralelo nunca se pisan
+// procesando el mismo link. Si esta variable no esta puesta, el script se
+// comporta como siempre (escanea todo) -- util para correrlo suelto a mano.
+const ARCHIVO_URLS_A_PROCESAR = process.env.ARCHIVO_URLS_A_PROCESAR || null;
+const ARCHIVO_RESULTADOS = process.env.ARCHIVO_RESULTADOS || null;
 
 // Busca un <video> en la pagina principal o en cualquier iframe (los tres
 // sitios meten el reproductor real adentro de un iframe) y le da play. Si
@@ -382,9 +352,14 @@ async function conTope(promesa, ms, etiqueta) {
 }
 
 async function main() {
-  const embeds = await recolectarEmbeds();
+  const embeds = ARCHIVO_URLS_A_PROCESAR
+    ? JSON.parse(await readFile(ARCHIVO_URLS_A_PROCESAR, 'utf8'))
+    : await recolectarEmbeds();
   console.log(`Encontrados ${embeds.length} embed(s) para darles vista (${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${CONCURRENCIA} en paralelo).`);
-  if (!embeds.length) return;
+  if (!embeds.length) {
+    if (ARCHIVO_RESULTADOS) await writeFile(ARCHIVO_RESULTADOS, '[]');
+    return;
+  }
 
   // --disable-blink-features=AutomationControlled apaga (ademas del
   // Object.defineProperty de arriba) otras señales internas de Chromium
@@ -415,6 +390,17 @@ async function main() {
   if (fallidos.length) {
     console.log('Fallidos:');
     fallidos.forEach((r) => console.log(` - ${r.url}`));
+  }
+
+  // En modo matrix, plan-vistas.mjs necesita saber cuales links tuvieron
+  // vista real HOY para poder actualizar vistas-estado.json -- se escribe
+  // aca en vez de parsear el log de texto de arriba.
+  if (ARCHIVO_RESULTADOS) {
+    const vistoEn = new Date().toISOString();
+    await writeFile(
+      ARCHIVO_RESULTADOS,
+      JSON.stringify(resultados.map((r) => ({ url: r.url, ok: r.ok, vistoEn })), null, 2)
+    );
   }
 }
 
