@@ -86,8 +86,21 @@ const SELECTORES_PLAY = [
   '[class*="jw-display-icon-container"]',
 ];
 
-async function intentarReproducir(pagina, ultimoIntento = false) {
-  for (const frame of pagina.frames()) {
+// Junta los frames de TODAS las pestañas que este link tiene abiertas ahora
+// mismo (la principal, mas cualquier pestaña nueva que se haya decidido
+// conservar -- ver mas abajo por que puede haber mas de una).
+function recolectarFrames(paginas) {
+  return paginas.flatMap((p) => {
+    try {
+      return p.frames();
+    } catch {
+      return [];
+    }
+  });
+}
+
+async function intentarReproducir(frames, ultimoIntento = false) {
+  for (const frame of frames) {
     try {
       const arranco = await frame.evaluate(() => {
         const v = document.querySelector('video');
@@ -99,7 +112,7 @@ async function intentarReproducir(pagina, ultimoIntento = false) {
       if (arranco) return true;
     } catch {}
   }
-  for (const frame of pagina.frames()) {
+  for (const frame of frames) {
     for (const sel of SELECTORES_PLAY) {
       try {
         const el = await frame.$(sel);
@@ -110,10 +123,10 @@ async function intentarReproducir(pagina, ultimoIntento = false) {
   // Ultimo recurso: muchos reproductores envueltos en publicidad no usan
   // ningun boton reconocible, sino que TODA el area del video es
   // clickeable (a veces hasta abre un popup de publicidad con el primer
-  // click, que ya se cierra solo via el listener de "page" mas abajo) --
+  // click, que ya se decide mas abajo si se conserva o se cierra) --
   // se prueba solo en el ultimo intento para no gastar clicks de mas.
   if (ultimoIntento) {
-    for (const frame of pagina.frames()) {
+    for (const frame of frames) {
       try {
         await frame.locator('body').click({ timeout: 1500 }); // click al centro por defecto
       } catch {}
@@ -122,8 +135,8 @@ async function intentarReproducir(pagina, ultimoIntento = false) {
   return false;
 }
 
-async function obtenerTiempoActual(pagina) {
-  for (const frame of pagina.frames()) {
+async function obtenerTiempoActual(frames) {
+  for (const frame of frames) {
     try {
       const t = await frame.evaluate(() => {
         const v = document.querySelector('video');
@@ -168,11 +181,31 @@ async function darVistaConNavegador(navegador, embedUrl) {
   const contexto = await navegador.newContext({ userAgent: UA });
   await ocultarMarcasDeAutomatizacion(contexto);
   const pagina = await contexto.newPage();
-  // Los popups de publicidad son casi seguros en estos sitios -- se
-  // cierran apenas se abren para que no interfieran ni se coman tiempo.
+
+  // Algunos sitios (sospecha fuerte con firestream, por el "about:blank"
+  // que queda en la pestaña principal) usan el patron de abrir el
+  // reproductor real en una pestaña NUEVA mientras la original queda en
+  // blanco -- si cerraramos toda pestaña nueva de una (como se hacia
+  // antes), estariamos cerrando justo la que tiene el video. Por eso ahora
+  // se le da una changa a cada pestaña nueva: si tiene un <video> real
+  // adentro, se conserva y se usa; si no (o parece un popup de
+  // publicidad comun), se cierra igual que antes.
+  const paginasVistas = [pagina];
   contexto.on('page', async (nueva) => {
     if (nueva === pagina) return;
-    try { await nueva.close(); } catch {}
+    try {
+      await nueva.waitForLoadState('domcontentloaded', { timeout: 8000 }).catch(() => {});
+      await nueva.waitForTimeout(1500);
+      const tieneVideo = await intentarReproducir(recolectarFrames([nueva])).catch(() => false);
+      if (tieneVideo) {
+        console.log(`[popup-con-video] ${embedUrl} -> pestaña nueva (${nueva.url()}) tenia el video, se conserva en vez de cerrarla`);
+        paginasVistas.push(nueva);
+      } else {
+        await nueva.close().catch(() => {});
+      }
+    } catch {
+      try { await nueva.close(); } catch {}
+    }
   });
 
   // Diagnostico extra para el caso "about:blank" (firestream) -- si la
@@ -210,21 +243,25 @@ async function darVistaConNavegador(navegador, embedUrl) {
     if (erroresConsola.length) {
       console.log(`[console-error] ${embedUrl} -> ${erroresConsola.slice(0, 5).join(' ; ')}`);
     }
-    console.log(`[frames] ${embedUrl} -> ${pagina.frames().map((f) => f.url()).join(' | ')}`);
+    console.log(`[frames] ${embedUrl} -> ${recolectarFrames(paginasVistas).map((f) => f.url()).join(' | ')}`);
 
     // Varios intentos espaciados en vez de dos seguidos -- algunos
     // reproductores tardan bastante en insertar el <video> real (cadenas
-    // de redireccion de publicidad antes de mostrar el player).
+    // de redireccion de publicidad antes de mostrar el player, o abren la
+    // pestaña nueva recien despues de un par de segundos).
     let arranco = false;
     for (let intento = 1; intento <= 5 && !arranco; intento++) {
-      arranco = await intentarReproducir(pagina, intento === 5);
+      arranco = await intentarReproducir(recolectarFrames(paginasVistas), intento === 5);
       if (!arranco) await pagina.waitForTimeout(4000);
     }
     if (!arranco) {
       console.log(`SIN-VIDEO [${embedUrl}] no se encontro un <video> para reproducir`);
       try {
         await mkdir('screenshots', { recursive: true });
-        await pagina.screenshot({ path: `screenshots/${nombreSeguro(embedUrl)}.png`, fullPage: true });
+        for (const [idx, p] of paginasVistas.entries()) {
+          const sufijo = idx === 0 ? '' : `_popup${idx}`;
+          await p.screenshot({ path: `screenshots/${nombreSeguro(embedUrl)}${sufijo}.png`, fullPage: true }).catch(() => {});
+        }
       } catch (e) {
         console.log(`(no se pudo guardar captura: ${e.message})`);
       }
@@ -235,10 +272,10 @@ async function darVistaConNavegador(navegador, embedUrl) {
     let maxTiempo = 0;
     while (Date.now() - inicio < SEGUNDOS_REPRODUCCION * 1000) {
       await pagina.waitForTimeout(15000);
-      const t = await obtenerTiempoActual(pagina);
+      const t = await obtenerTiempoActual(recolectarFrames(paginasVistas));
       if (typeof t === 'number') {
         if (t > maxTiempo) maxTiempo = t;
-        else await intentarReproducir(pagina); // se estanco (pausa, buffering) -- reintenta
+        else await intentarReproducir(recolectarFrames(paginasVistas)); // se estanco (pausa, buffering) -- reintenta
       }
     }
 
