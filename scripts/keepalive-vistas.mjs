@@ -139,8 +139,34 @@ function nombreSeguro(url) {
   return url.replace(/^https?:\/\//, '').replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 120);
 }
 
+// vids.st "reproduce" perfecto (currentTime llega a 180s) pero la vista
+// real no sube, y firestream directamente devuelve "about:blank" en vez de
+// la pagina -- los dos son la firma tipica de un sitio que chequea con
+// JavaScript si el navegador es automatizado (navigator.webdriver = true
+// es la marca que deja Playwright/Chromium por defecto) y, si lo detecta,
+// bloquea la pagina entera (firestream) o deja que el video se vea pero no
+// dispara el aviso de "vista real" que le llega al servidor (vids.st). Este
+// script esconde esa marca y algunas otras señales tipicas ANTES de que
+// cargue cualquier script de la pagina.
+async function ocultarMarcasDeAutomatizacion(contexto) {
+  await contexto.addInitScript(() => {
+    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+    Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+    Object.defineProperty(navigator, 'languages', { get: () => ['es-ES', 'es', 'en-US', 'en'] });
+    window.chrome = window.chrome || { runtime: {} };
+    if (window.navigator.permissions && window.navigator.permissions.query) {
+      const consultaOriginal = window.navigator.permissions.query;
+      window.navigator.permissions.query = (parametros) =>
+        parametros && parametros.name === 'notifications'
+          ? Promise.resolve({ state: Notification.permission })
+          : consultaOriginal(parametros);
+    }
+  });
+}
+
 async function darVistaConNavegador(navegador, embedUrl) {
   const contexto = await navegador.newContext({ userAgent: UA });
+  await ocultarMarcasDeAutomatizacion(contexto);
   const pagina = await contexto.newPage();
   // Los popups de publicidad son casi seguros en estos sitios -- se
   // cierran apenas se abren para que no interfieran ni se coman tiempo.
@@ -222,7 +248,13 @@ async function main() {
   console.log(`Encontrados ${embeds.length} embed(s) para darles vista (${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${CONCURRENCIA} en paralelo).`);
   if (!embeds.length) return;
 
-  const navegador = await chromium.launch({ headless: true });
+  // --disable-blink-features=AutomationControlled apaga (ademas del
+  // Object.defineProperty de arriba) otras señales internas de Chromium
+  // que delatan que es un navegador manejado por automatizacion.
+  const navegador = await chromium.launch({
+    headless: true,
+    args: ['--disable-blink-features=AutomationControlled'],
+  });
   const resultados = [];
   try {
     for (let i = 0; i < embeds.length; i += CONCURRENCIA) {
