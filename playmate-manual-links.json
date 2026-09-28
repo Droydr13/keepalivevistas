@@ -1,3 +1,839 @@
 [
-  { "imdbId": "tt0000000", "embedUrl": "https://playmate.to/embed/eLIr8vmL4bWU" }
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/86BReOROyODdh3qEjd7JcTKNz5CI4Oa5/master.txt",
+    "embedUrl": "https://playmate.to/embed/HCDEXd5AP6bW",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": "1.23 GB",
+    "agregado": "2026-09-24T04:10:10.789Z",
+    "ultimaRevision": "2026-09-24T04:10:10.789Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/2HQQAtOgiNz8vW4ZxGBDGfch4qxZpXNc/master.txt",
+    "embedUrl": "https://playmate.to/embed/PlM2YItq08Rj",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:38.770Z",
+    "ultimaRevision": "2026-09-24T04:15:38.770Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/qb9NUHAubwy4XlDxEVd0XNNzzef5dDhj/master.txt",
+    "embedUrl": "https://playmate.to/embed/sHvn73JeDyUK",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:40.254Z",
+    "ultimaRevision": "2026-09-24T04:15:40.254Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/x3seJFu4H5QSAjzJgNTZoOJnQOmbqinV/master.txt",
+    "embedUrl": "https://playmate.to/embed/AVRac1fW7WmT",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:42.309Z",
+    "ultimaRevision": "2026-09-24T04:15:42.309Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/kkEEDtzN6KGIAHp3nmrvGOybrsX1enJ4/master.txt",
+    "embedUrl": "https://playmate.to/embed/U1GjjFZI5UIS",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:43.676Z",
+    "ultimaRevision": "2026-09-24T04:15:43.676Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/cZTdJSdqlev1PH0u7l1x6zmFMuCMAk6g/master.txt",
+    "embedUrl": "https://playmate.to/embed/o39fFmeTdeBv",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:45.044Z",
+    "ultimaRevision": "2026-09-24T04:15:45.044Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/BY4K1Dsv8RczIZyUolPXXiS2PQnXEJw0/master.txt",
+    "embedUrl": "https://playmate.to/embed/YOYQhe2qemUf",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T04:15:46.511Z",
+    "ultimaRevision": "2026-09-24T04:15:46.511Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/HvEcdoU09pGvxNZILtPwsviM7du6Kivw/master.txt",
+    "embedUrl": "https://playmate.to/embed/0nQsOqG0EFUT",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netlfix",
+    "titulo": "Stranger Things",
+    "peso": "1.87 GB",
+    "agregado": "2026-09-24T05:15:03.419Z",
+    "ultimaRevision": "2026-09-24T05:15:03.419Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/kt34A5LceAXXqtorPyIrycWm2KOs2aot/master.txt",
+    "embedUrl": "https://playmate.to/embed/khxRvc5IISbw",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:46.621Z",
+    "ultimaRevision": "2026-09-24T19:51:46.621Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/aF1ePYkwOkPeFfIzw5qwN7kpo826GjgW/master.txt",
+    "embedUrl": "https://playmate.to/embed/EqXwgFCRQvjP",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:48.364Z",
+    "ultimaRevision": "2026-09-24T19:51:48.364Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/N6xELa9ek7AcBseP29bOunTiIpEyLwVv/master.txt",
+    "embedUrl": "https://playmate.to/embed/8jb4pZLXcBpF",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:50.223Z",
+    "ultimaRevision": "2026-09-24T19:51:50.223Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/IuCttDeth8OTHGbPDeS7Of50v4J5vSzd/master.txt",
+    "embedUrl": "https://playmate.to/embed/HaAijQIR2AOE",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:52.808Z",
+    "ultimaRevision": "2026-09-24T19:51:52.808Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/CFpdnrdNPmliKpH13NPyt9KE9Ob7Oh8b/master.txt",
+    "embedUrl": "https://playmate.to/embed/E08kxsxHnmAs",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:54.778Z",
+    "ultimaRevision": "2026-09-24T19:51:54.778Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/p4JCxzY1F4ZmiPmARdhDAzowxF8slwWU/master.txt",
+    "embedUrl": "https://playmate.to/embed/5fbjydJK8eu4",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:56.460Z",
+    "ultimaRevision": "2026-09-24T19:51:56.460Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/ERR5h6gRXMC2iCLxKhDPEd3mLqgoCxek/master.txt",
+    "embedUrl": "https://playmate.to/embed/tqZ5oUbzkSmm",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:51:58.553Z",
+    "ultimaRevision": "2026-09-24T19:51:58.553Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/LowHSIwnZvjnR9d4gW2EOgbbcvodma2c/master.txt",
+    "embedUrl": "https://playmate.to/embed/sYabxsWvu83t",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:52:01.010Z",
+    "ultimaRevision": "2026-09-24T19:52:01.010Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 9,
+    "url": "https://frv2.plauymito.live/hls/AtPILa32qaLwHJY2lXt8zGFGnH83aY50/master.txt",
+    "embedUrl": "https://playmate.to/embed/Jy7L2fMvElq8",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:52:02.857Z",
+    "ultimaRevision": "2026-09-24T19:52:02.857Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/BPJAmkKc1XF1zq3vVPTdzRFZWgsMyFjg/master.txt",
+    "embedUrl": "https://playmate.to/embed/2B8cp9gPT3t5",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:12.228Z",
+    "ultimaRevision": "2026-09-24T19:54:12.228Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/S15ZIwUybjes1pdBrwDXA63qHt6DQQdb/master.txt",
+    "embedUrl": "https://playmate.to/embed/zcn2Te96vjgK",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:14.033Z",
+    "ultimaRevision": "2026-09-24T19:54:14.033Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/WZO0PCuudqJngO6tl4YGLYUimpgwdhlY/master.txt",
+    "embedUrl": "https://playmate.to/embed/Vly4Jn1J2slD",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:15.645Z",
+    "ultimaRevision": "2026-09-24T19:54:15.645Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/O856H05wMQ96zPkXqVRXWuBIFD1V8w4w/master.txt",
+    "embedUrl": "https://playmate.to/embed/kONHsLVroVdk",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:18.679Z",
+    "ultimaRevision": "2026-09-24T19:54:18.679Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/OPeKciSpcK90mWynwswj5QwAFNrciFdi/master.txt",
+    "embedUrl": "https://playmate.to/embed/iuJ2HORJV8J8",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:20.469Z",
+    "ultimaRevision": "2026-09-24T19:54:20.469Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/zzmeRfQjKTkXm2lC2P2chCL2GtE2wWrg/master.txt",
+    "embedUrl": "https://playmate.to/embed/3v6yiyoQaKHe",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:22.376Z",
+    "ultimaRevision": "2026-09-24T19:54:22.376Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/Vs0OHgr8e0DdBSoJsPzoLD8z6K8SQrIa/master.txt",
+    "embedUrl": "https://playmate.to/embed/9EEQKi9qV8Ng",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:27.699Z",
+    "ultimaRevision": "2026-09-24T19:54:27.699Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/WrF0FokUcEfpNzgBof9TAlB4hep6h7Wa/master.txt",
+    "embedUrl": "https://playmate.to/embed/Jteg0yqpCvwV",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-24T19:54:29.615Z",
+    "ultimaRevision": "2026-09-24T19:54:29.615Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/GMsWcvX4iTXmiW45BIN8WxLrgypLo8gl/master.txt",
+    "embedUrl": "https://playmate.to/embed/PJmeIUYLk8Kw",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:23.889Z",
+    "ultimaRevision": "2026-09-25T16:08:23.889Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/tBeXsfpdVi2rZi18RGrH3SIOJArscKrZ/master.txt",
+    "embedUrl": "https://playmate.to/embed/Tg5waRUmZg8e",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:26.337Z",
+    "ultimaRevision": "2026-09-25T16:08:26.337Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/CkyuXQ4QWSiYlIinmwur5h561JxfiHXn/master.txt",
+    "embedUrl": "https://playmate.to/embed/Jtcder9t52E3",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:28.052Z",
+    "ultimaRevision": "2026-09-25T16:08:28.052Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/0acIHVYLDJ1YFQIWnJAnwmv2ZvVHagKi/master.txt",
+    "embedUrl": "https://playmate.to/embed/AtrvgAlKHB9r",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:30.110Z",
+    "ultimaRevision": "2026-09-25T16:08:30.110Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/B5ucsna57WH4tnw1wa0FgArHSwe6Ioyv/master.txt",
+    "embedUrl": "https://playmate.to/embed/jDUJ0IuQQns5",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:31.938Z",
+    "ultimaRevision": "2026-09-25T16:08:31.938Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/FoeIoxG4VQMcZv2OndMGr3XR7rrqXhrE/master.txt",
+    "embedUrl": "https://playmate.to/embed/V8WMsByml8ED",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:33.867Z",
+    "ultimaRevision": "2026-09-25T16:08:33.867Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/OLMTPTeguSfHXtQk6IQiaYmMzpft5qXI/master.txt",
+    "embedUrl": "https://playmate.to/embed/8SDH4EIlMOc4",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:36.336Z",
+    "ultimaRevision": "2026-09-25T16:08:36.336Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/9sGnKcIuXkfe2ZGo4c76CNjW31timKnK/master.txt",
+    "embedUrl": "https://playmate.to/embed/ktTXCYvTDVQt",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:37.888Z",
+    "ultimaRevision": "2026-09-25T16:08:37.888Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 9,
+    "url": "https://frv2.plauymito.live/hls/Yt2BT2arXof55SQ5Q6yHLIqCrta4C0sT/master.txt",
+    "embedUrl": "https://playmate.to/embed/LEheO2xzfDgv",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:08:39.770Z",
+    "ultimaRevision": "2026-09-25T16:08:39.770Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/YasXRh0vvNz5lBTsPiHClaEThbiWUZSk/master.txt",
+    "embedUrl": "https://playmate.to/embed/O4tKdhaPtYNz",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:20.114Z",
+    "ultimaRevision": "2026-09-25T16:12:20.115Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/h9A6o8upf7ziESvk15dIygx4T4Pluf7m/master.txt",
+    "embedUrl": "https://playmate.to/embed/acO5nXTyLeYU",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:22.121Z",
+    "ultimaRevision": "2026-09-25T16:12:22.121Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/boh02iTEFqHEnmNvcdzTGacHwyL8fNQm/master.txt",
+    "embedUrl": "https://playmate.to/embed/E5gJF4YcwWG5",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:24.056Z",
+    "ultimaRevision": "2026-09-25T16:12:24.056Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/zC33eeBqfGUzZ0ePB2sOZY5Gf5sMk9Ez/master.txt",
+    "embedUrl": "https://playmate.to/embed/gXayhulCVak7",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:25.928Z",
+    "ultimaRevision": "2026-09-25T16:12:25.928Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/8pKdJpVEyBBaoWrzFL1S1435j5Y2uOks/master.txt",
+    "embedUrl": "https://playmate.to/embed/GAGAuNAc6VLZ",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:27.943Z",
+    "ultimaRevision": "2026-09-25T16:12:27.943Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/bwPi9cYPU2Nb9B8uftIHm76innPMs0WU/master.txt",
+    "embedUrl": "https://playmate.to/embed/AjE51Jm7AxAo",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:29.713Z",
+    "ultimaRevision": "2026-09-25T16:12:29.713Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/7twzvJD95JFEKGQ0O8aYC4sHNPV6c1H1/master.txt",
+    "embedUrl": "https://playmate.to/embed/eLIr8vmL4bWU",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:31.287Z",
+    "ultimaRevision": "2026-09-25T16:12:31.287Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 5,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/v2LmUGlTxIOm7CVZe7wo2ykFNzfR0QzJ/master.txt",
+    "embedUrl": "https://playmate.to/embed/KSWU9a86CD7I",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": null,
+    "agregado": "2026-09-25T16:12:32.908Z",
+    "ultimaRevision": "2026-09-25T16:12:32.908Z"
+  }
 ]
