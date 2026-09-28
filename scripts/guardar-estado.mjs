@@ -1,10 +1,6 @@
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
-// Cada job del matrix sube su resultados.json como artifact aparte (para
-// no pisarse entre si); el job de merge los baja todos a esta carpeta
-// (download-artifact con pattern crea una subcarpeta por artifact) y este
-// script los junta todos, sin importar cuantos jobs hayan corrido.
 const DIRECTORIO_RESULTADOS = process.env.DIRECTORIO_RESULTADOS || 'resultados-descargados';
 const ARCHIVO_ESTADO = process.env.ARCHIVO_ESTADO || 'vistas-estado.json';
 
@@ -51,11 +47,9 @@ async function main() {
     if (!r || !r.url) continue;
     if (!r.ok) {
       fallidos++;
-      continue; // queda con la ultimaVista que tenia -- se reintenta solo al otro dia
+      continue;
     }
     if (!estado[r.url]) {
-      // No deberia pasar (plan-vistas.mjs siempre da de alta cada url antes
-      // de que se procese), pero por las dudas no se pierde el resultado.
       estado[r.url] = { primeraVezVisto: r.vistoEn, ultimaVista: null };
       sinEstadoPrevio++;
     }
@@ -68,7 +62,7 @@ async function main() {
   console.log(`Resultados juntados: ${resultados.length}.`);
   console.log(`Actualizados (vista exitosa): ${actualizados}.`);
   console.log(`Fallidos (quedan debidos, se reintentan solos): ${fallidos}.`);
-  if (sinEstadoPrevio) console.log(`(${sinEstadoPrevio} no tenian entrada previa en ${ARCHIVO_ESTADO} -- raro, revisar.)`);
+  if (sinEstadoPrevio) console.log(`(${sinEstadoPrevio} no tenian entrada previa en ${ARCHIVO_ESTADO}.)`);
 }
 
 main();
