@@ -1,0 +1,38 @@
+name: Mantener vivos links de vids.st / FireStream / Playmate
+
+on:
+  schedule:
+    # Todos los lunes a las 09:00 UTC (~03:00 hora de Ciudad de Mexico).
+    - cron: '0 9 * * 1'
+  workflow_dispatch: {} # permite dispararlo a mano desde la pestaña Actions
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    # Cada link se reproduce ~3 minutos (SEGUNDOS_REPRODUCCION en el script) --
+    # con varios links esto puede tardar bastante. Si tenes muchos links
+    # subidos y el job se corta por tiempo, subi este numero.
+    timeout-minutes: 180
+    steps:
+      - name: Bajar el repo (para leer los JSON de links)
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias (Playwright)
+        working-directory: scripts
+        run: npm install
+
+      - name: Instalar Chromium para Playwright
+        working-directory: scripts
+        run: npx playwright install --with-deps chromium
+
+      - name: Darle vista real (con navegador) a cada link
+        working-directory: .
+        env:
+          SEGUNDOS_REPRODUCCION: '180'
+          CONCURRENCIA: '2'
+        run: node scripts/keepalive-vistas.mjs
