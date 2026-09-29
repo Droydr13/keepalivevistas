@@ -7,6 +7,7 @@ const MIN_POR_JOB = parseInt(process.env.MIN_POR_JOB || '3', 10);
 
 const ARCHIVO_ESTADO = process.env.ARCHIVO_ESTADO || 'vistas-estado.json';
 const ARCHIVO_MATRIX_SALIDA = process.env.ARCHIVO_MATRIX_SALIDA || 'matrix.json';
+const ARCHIVO_NUEVOS = process.env.ARCHIVO_NUEVOS || 'nuevos-registrados.json';
 
 async function leerEstado() {
   try {
@@ -29,21 +30,21 @@ async function main() {
   const ahora = Date.now();
   const topeMs = DIAS_ENTRE_VISTAS * 24 * 60 * 60 * 1000;
 
-  let nuevos = 0;
+  const nuevos = {};
   const debidos = [];
 
   for (const [url, agregado] of embedsConFecha) {
-    if (!estado[url]) {
-      estado[url] = { primeraVezVisto: agregado || new Date(ahora).toISOString(), ultimaVista: null };
-      nuevos++;
+    let entrada = estado[url];
+    if (!entrada) {
+      entrada = { primeraVezVisto: agregado || new Date(ahora).toISOString(), ultimaVista: null };
+      nuevos[url] = entrada;
     }
-    const e = estado[url];
-    if (!e.ultimaVista || ahora - Date.parse(e.ultimaVista) >= topeMs) {
+    if (!entrada.ultimaVista || ahora - Date.parse(entrada.ultimaVista) >= topeMs) {
       debidos.push(url);
     }
   }
 
-  await writeFile(ARCHIVO_ESTADO, JSON.stringify(estado, null, 2) + '\n');
+  await writeFile(ARCHIVO_NUEVOS, JSON.stringify(nuevos, null, 2) + '\n');
 
   const numChunks = Math.max(1, Math.min(MAX_JOBS_PARALELOS, Math.ceil(debidos.length / MIN_POR_JOB)));
   const chunks = debidos.length ? repartirEnChunks(debidos, numChunks) : [];
@@ -51,7 +52,7 @@ async function main() {
 
   await writeFile(ARCHIVO_MATRIX_SALIDA, JSON.stringify(matrix));
 
-  console.log(`Links conocidos: ${embedsConFecha.size} (${nuevos} nuevo(s) hoy).`);
+  console.log(`Links conocidos: ${embedsConFecha.size} (${Object.keys(nuevos).length} nuevo(s) hoy).`);
   console.log(`Debidos hoy (nunca vistos o con ${DIAS_ENTRE_VISTAS}+ dias sin vista): ${debidos.length}.`);
   console.log(`Repartidos en ${matrix.length} job(s) del matrix.`);
 
