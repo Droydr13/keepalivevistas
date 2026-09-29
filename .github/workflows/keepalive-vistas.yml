@@ -32,21 +32,23 @@ jobs:
         id: plan
         run: node scripts/plan-vistas.mjs
 
-      - name: Guardar altas nuevas en vistas-estado.json
+      - name: Registrar links nuevos en vistas-estado.json
         run: |
-          if git diff --quiet -- vistas-estado.json; then
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add vistas-estado.json
-          git commit -m "Plan: registrar links nuevos detectados hoy"
-          for i in 1 2 3 4 5; do
-            if git push; then
+          for intento in 1 2 3 4 5 6 7 8; do
+            node scripts/registrar-nuevos.mjs
+            if git diff --quiet -- vistas-estado.json; then
               exit 0
             fi
+            git add vistas-estado.json
+            git commit -m "Plan: registrar links nuevos detectados hoy"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((RANDOM % 8 + 2))
             git fetch origin main
-            git rebase origin/main
+            git reset --hard origin/main
           done
           exit 1
 
@@ -121,22 +123,21 @@ jobs:
           path: resultados-descargados
 
       - name: Actualizar ultimaVista
-        run: node scripts/guardar-estado.mjs
-
-      - name: Commitear estado final
         run: |
-          if git diff --quiet -- vistas-estado.json; then
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add vistas-estado.json
-          git commit -m "Actualizar fechas de ultima vista"
-          for i in 1 2 3 4 5; do
-            if git push; then
+          for intento in 1 2 3 4 5 6 7 8; do
+            node scripts/guardar-estado.mjs
+            if git diff --quiet -- vistas-estado.json; then
               exit 0
             fi
+            git add vistas-estado.json
+            git commit -m "Actualizar fechas de ultima vista"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((RANDOM % 8 + 2))
             git fetch origin main
-            git rebase origin/main
+            git reset --hard origin/main
           done
           exit 1
