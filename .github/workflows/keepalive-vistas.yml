@@ -34,13 +34,21 @@ jobs:
 
       - name: Guardar altas nuevas en vistas-estado.json
         run: |
-          if ! git diff --quiet -- vistas-estado.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add vistas-estado.json
-            git commit -m "Plan: registrar links nuevos detectados hoy"
-            git push
+          if git diff --quiet -- vistas-estado.json; then
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vistas-estado.json
+          git commit -m "Plan: registrar links nuevos detectados hoy"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          exit 1
 
   vistas:
     needs: plan
@@ -117,10 +125,18 @@ jobs:
 
       - name: Commitear estado final
         run: |
-          if ! git diff --quiet -- vistas-estado.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add vistas-estado.json
-            git commit -m "Actualizar fechas de ultima vista"
-            git push
+          if git diff --quiet -- vistas-estado.json; then
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vistas-estado.json
+          git commit -m "Actualizar fechas de ultima vista"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          exit 1
