@@ -3127,5 +3127,256 @@
     "peso": "1.50 GB",
     "agregado": "2026-09-29T00:45:12.471Z",
     "ultimaRevision": "2026-09-29T00:45:12.471Z"
+  },
+  {
+    "imdbId": "tt0437086",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174082/master.m3u8",
+    "referer": "https://vids.st/e/174082",
+    "embedUrl": "https://vids.st/e/174082",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Battle Angel: La última guerrera",
+    "peso": "1.17",
+    "agregado": "2026-09-29T03:10:43.497Z",
+    "ultimaRevision": "2026-09-29T03:10:43.497Z"
+  },
+  {
+    "imdbId": "tt0437086",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174082/master.m3u8",
+    "referer": "https://vids.st/e/174082",
+    "embedUrl": "https://vids.st/e/174082",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Battle Angel: La última guerrera",
+    "peso": "1.17",
+    "agregado": "2026-09-29T03:10:43.665Z",
+    "ultimaRevision": "2026-09-29T03:10:43.665Z"
+  },
+  {
+    "imdbId": "tt1843230",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://vids.st/storage/uploads/video174353/Once-Upon-a-Time-S01E05.mkv",
+    "referer": "https://vids.st/e/174353",
+    "embedUrl": "https://vids.st/e/174353",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Disney+",
+    "titulo": "Érase una vez",
+    "peso": "2.7GB",
+    "agregado": "2026-09-29T03:10:44.832Z",
+    "ultimaRevision": "2026-09-29T03:10:44.832Z"
+  },
+  {
+    "imdbId": "tt1843230",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://vids.st/storage/uploads/video174353/Once-Upon-a-Time-S01E05.mkv",
+    "referer": "https://vids.st/e/174353",
+    "embedUrl": "https://vids.st/e/174353",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Disney+",
+    "titulo": "Érase una vez",
+    "peso": "2.7GB",
+    "agregado": "2026-09-29T03:10:45.005Z",
+    "ultimaRevision": "2026-09-29T03:10:45.005Z"
+  },
+  {
+    "imdbId": "tt28650488",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video174386/1000158745.mkv",
+    "referer": "https://vids.st/e/174386",
+    "embedUrl": "https://vids.st/e/174386",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "SDR",
+      "EAC3"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Super Mario Galaxy: La película",
+    "peso": "19GB",
+    "agregado": "2026-09-29T03:10:46.181Z",
+    "ultimaRevision": "2026-09-29T03:10:46.181Z"
+  },
+  {
+    "imdbId": "tt28650488",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video174386/1000158745.mkv",
+    "referer": "https://vids.st/e/174386",
+    "embedUrl": "https://vids.st/e/174386",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "SDR",
+      "EAC3"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Super Mario Galaxy: La película",
+    "peso": "19GB",
+    "agregado": "2026-09-29T03:10:46.336Z",
+    "ultimaRevision": "2026-09-29T03:10:46.336Z"
+  },
+  {
+    "imdbId": "tt11378946",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video174391/1000158759.mkv",
+    "referer": "https://vids.st/e/174391",
+    "embedUrl": "https://vids.st/e/174391",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "SDR",
+      "EAC3"
+    ],
+    "plataforma": "Prime Video",
+    "titulo": "Michael",
+    "peso": "12.7GB",
+    "agregado": "2026-09-29T03:10:47.516Z",
+    "ultimaRevision": "2026-09-29T03:10:47.516Z"
+  },
+  {
+    "imdbId": "tt11378946",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video174391/1000158759.mkv",
+    "referer": "https://vids.st/e/174391",
+    "embedUrl": "https://vids.st/e/174391",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "SDR",
+      "EAC3"
+    ],
+    "plataforma": "Prime Video",
+    "titulo": "Michael",
+    "peso": "12.7GB",
+    "agregado": "2026-09-29T03:10:47.672Z",
+    "ultimaRevision": "2026-09-29T03:10:47.672Z"
+  },
+  {
+    "imdbId": "tt36463894",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174400/master.m3u8",
+    "referer": "https://vids.st/e/174400",
+    "embedUrl": "https://vids.st/e/174400",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Depredador: Cazador de asesinos",
+    "peso": "1.44 GB",
+    "agregado": "2026-09-29T03:10:48.858Z",
+    "ultimaRevision": "2026-09-29T03:10:48.858Z"
+  },
+  {
+    "imdbId": "tt36463894",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174400/master.m3u8",
+    "referer": "https://vids.st/e/174400",
+    "embedUrl": "https://vids.st/e/174400",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Depredador: Cazador de asesinos",
+    "peso": "1.44 GB",
+    "agregado": "2026-09-29T03:10:49.015Z",
+    "ultimaRevision": "2026-09-29T03:10:49.015Z"
+  },
+  {
+    "imdbId": "tt14961624",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174396/master.m3u8",
+    "referer": "https://vids.st/e/174396",
+    "embedUrl": "https://vids.st/e/174396",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Netflix",
+    "titulo": "La vieja guardia 2",
+    "peso": "1.81 GB",
+    "agregado": "2026-09-29T03:10:50.305Z",
+    "ultimaRevision": "2026-09-29T03:10:50.305Z"
   }
 ]
