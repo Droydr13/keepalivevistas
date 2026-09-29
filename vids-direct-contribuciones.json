@@ -3017,5 +3017,115 @@
     "peso": "11.7GB",
     "agregado": "2026-09-28T18:41:03.816Z",
     "ultimaRevision": "2026-09-28T18:41:03.816Z"
+  },
+  {
+    "imdbId": "tt1951264",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video173963/Los-Juegos-Del-Hambre-En-Llamas.mkv",
+    "referer": "https://vids.st/e/173963",
+    "embedUrl": "https://vids.st/e/173963",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Los juegos del hambre: En llamas",
+    "peso": "11.4GB",
+    "agregado": "2026-09-29T00:45:07.092Z",
+    "ultimaRevision": "2026-09-29T00:45:07.092Z"
+  },
+  {
+    "imdbId": "tt2872732",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video173905/master.m3u8",
+    "referer": "https://vids.st/e/173905",
+    "embedUrl": "https://vids.st/e/173905",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H265"
+    ],
+    "plataforma": null,
+    "titulo": "Lucy",
+    "peso": "1.21 GB",
+    "agregado": "2026-09-29T00:45:08.445Z",
+    "ultimaRevision": "2026-09-29T00:45:08.445Z"
+  },
+  {
+    "imdbId": "tt0446029",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video173230/Scott-Pilgrim-vs-los-ex-de-la-chica-de-sus-sue-os.mp4",
+    "referer": "https://vids.st/e/173230",
+    "embedUrl": "https://vids.st/e/173230",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Scott Pilgrim vs. los ex de la chica de sus sueños",
+    "peso": "1886 MB",
+    "agregado": "2026-09-29T00:45:09.783Z",
+    "ultimaRevision": "2026-09-29T00:45:09.783Z"
+  },
+  {
+    "imdbId": "tt0042332",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video173781/1000158597.mkv",
+    "referer": "https://vids.st/e/173781",
+    "embedUrl": "https://vids.st/e/173781",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "La cenicienta",
+    "peso": "7.7GB",
+    "agregado": "2026-09-29T00:45:11.134Z",
+    "ultimaRevision": "2026-09-29T00:45:11.134Z"
+  },
+  {
+    "imdbId": "tt4154796",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174378/master.m3u8",
+    "referer": "https://vids.st/e/174378",
+    "embedUrl": "https://vids.st/e/174378",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Avengers: Endgame",
+    "peso": "1.50 GB",
+    "agregado": "2026-09-29T00:45:12.471Z",
+    "ultimaRevision": "2026-09-29T00:45:12.471Z"
   }
 ]
