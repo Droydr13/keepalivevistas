@@ -2611,5 +2611,24 @@
     "peso": null,
     "agregado": "2026-09-29T14:13:01.691Z",
     "ultimaRevision": "2026-09-29T14:13:01.691Z"
+  },
+  {
+    "imdbId": "tt15975122",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/FFYiIjM36KN8npl3KVHcRxlJNmhWTm29/master.txt",
+    "embedUrl": "https://playmate.to/embed/cEJlKq8866ke",
+    "idioma": "Castellano",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Call of the Night",
+    "peso": null,
+    "agregado": "2026-09-29T14:13:11.687Z",
+    "ultimaRevision": "2026-09-29T14:13:11.687Z"
   }
 ]
