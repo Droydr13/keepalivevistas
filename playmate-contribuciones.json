@@ -2554,5 +2554,43 @@
     "peso": null,
     "agregado": "2026-09-29T14:12:37.094Z",
     "ultimaRevision": "2026-09-29T14:12:37.094Z"
+  },
+  {
+    "imdbId": "tt15975122",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 11,
+    "url": "https://frv2.plauymito.live/hls/LJyVfB9C4ide7SDn6K74VsWeRBl8wbSm/master.txt",
+    "embedUrl": "https://playmate.to/embed/X9VNX7E8PNch",
+    "idioma": "Castellano",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Call of the Night",
+    "peso": null,
+    "agregado": "2026-09-29T14:12:45.068Z",
+    "ultimaRevision": "2026-09-29T14:12:45.068Z"
+  },
+  {
+    "imdbId": "tt15975122",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 9,
+    "url": "https://frv2.plauymito.live/hls/GnPLMQo2y1WVZH6quZ5DNW42hhpXjVpG/master.txt",
+    "embedUrl": "https://playmate.to/embed/uQhgCJ5Sl8uv",
+    "idioma": "Castellano",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Call of the Night",
+    "peso": null,
+    "agregado": "2026-09-29T14:12:53.810Z",
+    "ultimaRevision": "2026-09-29T14:12:53.810Z"
   }
 ]
