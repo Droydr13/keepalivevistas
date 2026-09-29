@@ -2218,12 +2218,14 @@
     "idioma": "Latino",
     "idiomaDetalle": [],
     "calidad": "1080p",
-    "tags": [],
+    "tags": [
+      "H264"
+    ],
     "plataforma": "Netflix",
     "titulo": "Kotaro vive solo",
     "peso": null,
-    "agregado": "2026-09-28T18:41:22.057Z",
-    "ultimaRevision": "2026-09-28T18:41:22.057Z"
+    "agregado": "2026-09-29T03:07:50.363Z",
+    "ultimaRevision": "2026-09-29T03:07:50.363Z"
   },
   {
     "imdbId": "tt15490038",
