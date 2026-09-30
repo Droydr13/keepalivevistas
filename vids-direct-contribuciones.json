@@ -7743,5 +7743,26 @@
     "peso": "2.47 GB",
     "agregado": "2026-09-30T05:44:07.551Z",
     "ultimaRevision": "2026-09-30T05:44:07.551Z"
+  },
+  {
+    "imdbId": "tt15047880",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video174758/master.m3u8",
+    "referer": "https://vids.st/e/174758",
+    "embedUrl": "https://vids.st/e/174758",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "El día de la revelación",
+    "peso": "2.47 GB",
+    "agregado": "2026-09-30T05:44:18.847Z",
+    "ultimaRevision": "2026-09-30T05:44:18.847Z"
   }
 ]
