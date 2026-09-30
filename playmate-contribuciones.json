@@ -2744,5 +2744,24 @@
     "peso": null,
     "agregado": "2026-09-29T14:17:15.304Z",
     "ultimaRevision": "2026-09-29T14:17:15.304Z"
+  },
+  {
+    "imdbId": "tt13651628",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/wRl3Bgt4vwy44zDUy9GHurp1o1uDmusr/master.txt",
+    "embedUrl": "https://playmate.to/embed/GY289iP3YmJV",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Belle",
+    "peso": "1.57 GB",
+    "agregado": "2026-09-30T05:37:59.692Z",
+    "ultimaRevision": "2026-09-30T05:37:59.692Z"
   }
 ]
