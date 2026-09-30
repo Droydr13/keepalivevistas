@@ -2782,5 +2782,24 @@
     "peso": "1.06 GB",
     "agregado": "2026-09-30T05:39:37.284Z",
     "ultimaRevision": "2026-09-30T05:39:37.284Z"
+  },
+  {
+    "imdbId": "tt35114460",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/rICS3w8Qwmc7PWN36rdyb8xxeQ5dl3RH/master.txt",
+    "embedUrl": "https://playmate.to/embed/ALcT3dTpNwo5",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Scarlet",
+    "peso": "878.36 MB",
+    "agregado": "2026-09-30T05:39:47.146Z",
+    "ultimaRevision": "2026-09-30T05:39:47.146Z"
   }
 ]
