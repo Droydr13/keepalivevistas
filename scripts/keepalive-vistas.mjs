@@ -81,6 +81,11 @@ function nombreSeguro(url) {
   return url.replace(/^https?:\/\//, '').replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 120);
 }
 
+function urlParaReproducir(embedUrl) {
+  const m = embedUrl.match(/^https:\/\/vids\.st\/e\/(\d+)\/?$/);
+  return m ? `https://vids.st/v/${m[1]}` : embedUrl;
+}
+
 async function ocultarMarcasDeAutomatizacion(contexto) {
   await contexto.addInitScript(() => {
     Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
@@ -170,7 +175,11 @@ async function darVistaConNavegador(navegador, embedUrl) {
   });
 
   try {
-    const respuesta = await pagina.goto(embedUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    const urlNavegacion = urlParaReproducir(embedUrl);
+    if (urlNavegacion !== embedUrl) {
+      console.log(`[vids.st] ${embedUrl} -> se navega a ${urlNavegacion} para que la vista cuente`);
+    }
+    const respuesta = await pagina.goto(urlNavegacion, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
     console.log(
