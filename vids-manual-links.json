@@ -167,5 +167,18 @@
     "calidad": "1080p",
     "titulo": "Proyecto Alf",
     "agregado": "2026-09-19T03:44:22.735Z"
+  },
+  {
+    "imdbId": "tt0086320",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video150779/master.m3u8",
+    "referer": "https://vids.st/v/150779",
+    "embedUrl": "https://vids.st/v/150779",
+    "idioma": "Latino",
+    "calidad": "1080p",
+    "titulo": "Sleepaway Camp",
+    "agregado": "2026-09-18T07:10:38.332Z" 
   }
 ]
