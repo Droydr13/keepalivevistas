@@ -2763,5 +2763,24 @@
     "peso": "1.57 GB",
     "agregado": "2026-09-30T05:37:59.692Z",
     "ultimaRevision": "2026-09-30T05:37:59.692Z"
+  },
+  {
+    "imdbId": "tt37594278",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/rNvFdERV6AuzaUY19mwnwSGIYQPx0Uzd/master.txt",
+    "embedUrl": "https://playmate.to/embed/LjxojEsh2Z4o",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "El sacerdote: La masacre de acción de gracias",
+    "peso": "1.06 GB",
+    "agregado": "2026-09-30T05:39:37.284Z",
+    "ultimaRevision": "2026-09-30T05:39:37.284Z"
   }
 ]
