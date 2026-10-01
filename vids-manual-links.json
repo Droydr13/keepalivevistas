@@ -209,5 +209,26 @@
     "peso": "1.8 GB",
     "agregado": "2026-10-01T05:34:55.769Z",
     "ultimaRevision": "2026-10-01T05:34:55.769Z"
+  },
+  {
+    "imdbId": "tt2510894",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video175458/rr-tt-r-l-r-l-qu-d-l-u-rt-rt-2-2011-n-tt-w-dl-1080-l-t-n.mp4",
+    "referer": "https://vids.st/e/175458",
+    "embedUrl": "https://vids.st/e/175458",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "REMUX"
+    ],
+    "plataforma": "Sony",
+    "titulo": "Hotel Transylvania 2",
+    "peso": "1.87 GB",
+    "agregado": "2026-10-01T16:12:15.673Z",
+    "ultimaRevision": "2026-10-01T16:12:15.673Z"
   }
 ]
