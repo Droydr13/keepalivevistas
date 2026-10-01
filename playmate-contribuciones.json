@@ -3056,16 +3056,14 @@
     "episodio": 13,
     "url": "https://frv2.plauymito.live/hls/zVtehiFXZlIYyN7i6XTD87x3q9hggmKc/master.txt",
     "embedUrl": "https://playmate.to/embed/16VKzRvvFI08",
-    "idioma": "Latino",
+    "idioma": null,
     "idiomaDetalle": [],
-    "calidad": "1080p",
-    "tags": [
-      "H264"
-    ],
+    "calidad": null,
+    "tags": [],
     "plataforma": null,
     "titulo": "Clevatess",
     "peso": null,
-    "agregado": "2026-10-01T05:26:46.742Z",
-    "ultimaRevision": "2026-10-01T05:26:46.742Z"
+    "agregado": "2026-10-01T05:27:04.736Z",
+    "ultimaRevision": "2026-10-01T05:27:04.736Z"
   }
 ]
