@@ -9044,5 +9044,26 @@
     "peso": null,
     "agregado": "2026-10-01T05:35:09.005Z",
     "ultimaRevision": "2026-10-01T05:35:09.005Z"
+  },
+  {
+    "imdbId": "tt4574334",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/uploads/video175656/s1e01-la-desaparicion-de-will-byers.mp4",
+    "referer": "https://vids.st/e/175656",
+    "embedUrl": "https://vids.st/e/175656",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Stranger Things",
+    "peso": "1 GB",
+    "agregado": "2026-10-01T20:10:50.986Z",
+    "ultimaRevision": "2026-10-01T20:10:50.986Z"
   }
 ]
