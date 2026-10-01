@@ -8745,5 +8745,74 @@
     "peso": "2 GB",
     "agregado": "2026-09-30T23:16:29.240Z",
     "ultimaRevision": "2026-09-30T23:16:29.240Z"
+  },
+  {
+    "imdbId": "tt21975436",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 11,
+    "url": "https://vids.st/storage/uploads/video175260/Kaiju-No.-8---S02E23-1080p-.mkv",
+    "referer": "https://vids.st/e/175260",
+    "embedUrl": "https://vids.st/e/175260",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Kaiju No. 8",
+    "peso": null,
+    "agregado": "2026-10-01T05:24:28.482Z",
+    "ultimaRevision": "2026-10-01T05:24:28.482Z"
+  },
+  {
+    "imdbId": "tt21975436",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 11,
+    "url": "https://vids.st/storage/uploads/video175260/Kaiju-No.-8---S02E23-1080p-.mkv",
+    "referer": "https://vids.st/e/175260",
+    "embedUrl": "https://vids.st/e/175260",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Kaiju No. 8",
+    "peso": null,
+    "agregado": "2026-10-01T05:24:28.488Z",
+    "ultimaRevision": "2026-10-01T05:24:28.488Z"
+  },
+  {
+    "imdbId": "tt21975436",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 10,
+    "url": "https://vids.st/storage/uploads/video175257/Kaiju-No.-8---S02E22-1080p-.mkv",
+    "referer": "https://vids.st/e/175257",
+    "embedUrl": "https://vids.st/e/175257",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Kaiju No. 8",
+    "peso": null,
+    "agregado": "2026-10-01T05:24:29.821Z",
+    "ultimaRevision": "2026-10-01T05:24:29.821Z"
   }
 ]
