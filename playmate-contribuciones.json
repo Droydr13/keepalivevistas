@@ -3029,5 +3029,24 @@
     "peso": null,
     "agregado": "2026-10-01T03:28:27.143Z",
     "ultimaRevision": "2026-10-01T03:28:27.143Z"
+  },
+  {
+    "imdbId": "tt6455986",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 10,
+    "url": "https://frv2.plauymito.live/hls/AdP66RxN0C1QuByK6QnVyJ3EI6xRPeQJ/master.txt",
+    "embedUrl": "https://playmate.to/embed/yGacgn304ukT",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Saga of Tanya The Evil",
+    "peso": null,
+    "agregado": "2026-10-01T03:28:28.988Z",
+    "ultimaRevision": "2026-10-01T03:28:28.988Z"
   }
 ]
