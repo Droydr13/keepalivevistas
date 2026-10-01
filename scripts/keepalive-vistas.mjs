@@ -3,9 +3,14 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { recolectarEmbeds } from './fuentes.mjs';
 
 const SEGUNDOS_REPRODUCCION = parseInt(process.env.SEGUNDOS_REPRODUCCION || '180', 10);
+const SEGUNDOS_REPRODUCCION_VIDSST = parseInt(process.env.SEGUNDOS_REPRODUCCION_VIDSST || '240', 10);
 const CONCURRENCIA = parseInt(process.env.CONCURRENCIA || '2', 10);
 const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '30', 10);
-const TOPE_POR_LINK_MS = (SEGUNDOS_REPRODUCCION + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
+
+function topePorLinkMs(url) {
+  const segundos = esVidsSt(url) ? SEGUNDOS_REPRODUCCION_VIDSST : SEGUNDOS_REPRODUCCION;
+  return (segundos + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
+}
 
 const ARCHIVO_URLS_A_PROCESAR = process.env.ARCHIVO_URLS_A_PROCESAR || null;
 const ARCHIVO_RESULTADOS = process.env.ARCHIVO_RESULTADOS || null;
@@ -84,6 +89,10 @@ function nombreSeguro(url) {
 function urlParaReproducir(embedUrl) {
   const m = embedUrl.match(/^https:\/\/vids\.st\/e\/(\d+)\/?$/);
   return m ? `https://vids.st/v/${m[1]}` : embedUrl;
+}
+
+function esVidsSt(embedUrl) {
+  return urlParaReproducir(embedUrl) !== embedUrl;
 }
 
 async function ocultarMarcasDeAutomatizacion(contexto) {
@@ -176,26 +185,24 @@ async function darVistaConNavegador(navegador, embedUrl) {
 
   try {
     const urlNavegacion = urlParaReproducir(embedUrl);
-    if (urlNavegacion !== embedUrl) {
-      console.log(`[vids.st] ${embedUrl} -> se navega a ${urlNavegacion} para que la vista cuente`);
-    }
+    const etiqueta = urlNavegacion !== embedUrl ? `${embedUrl} (reproducido en ${urlNavegacion})` : embedUrl;
     const respuesta = await pagina.goto(urlNavegacion, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
     console.log(
-      `[nav] ${embedUrl} -> status ${respuesta ? respuesta.status() : 'sin respuesta'}` +
+      `[nav] ${etiqueta} -> status ${respuesta ? respuesta.status() : 'sin respuesta'}` +
       `, url final: ${respuesta ? respuesta.url() : pagina.url()}`
     );
     if (pedidosFallidos.length) {
-      console.log(`[requestfailed] ${embedUrl} -> ${pedidosFallidos.join(' ; ')}`);
+      console.log(`[requestfailed] ${etiqueta} -> ${pedidosFallidos.join(' ; ')}`);
     }
     if (erroresConsola.length) {
-      console.log(`[console-error] ${embedUrl} -> ${erroresConsola.slice(0, 5).join(' ; ')}`);
+      console.log(`[console-error] ${etiqueta} -> ${erroresConsola.slice(0, 5).join(' ; ')}`);
     }
     if (respuestasConError.length) {
-      console.log(`[respuestas-error] ${embedUrl} -> ${respuestasConError.slice(0, 8).join(' ; ')}`);
+      console.log(`[respuestas-error] ${etiqueta} -> ${respuestasConError.slice(0, 8).join(' ; ')}`);
     }
-    console.log(`[frames] ${embedUrl} -> ${recolectarFrames(paginasVistas).map((f) => f.url()).join(' | ')}`);
+    console.log(`[frames] ${etiqueta} -> ${recolectarFrames(paginasVistas).map((f) => f.url()).join(' | ')}`);
 
     const inicioBusqueda = Date.now();
     let arranco = false;
@@ -206,11 +213,11 @@ async function darVistaConNavegador(navegador, embedUrl) {
       if (!arranco) await pagina.waitForTimeout(3000);
     }
     console.log(
-      `[busqueda-video] ${embedUrl} -> ${intentos} intento(s) en ~${Math.round((Date.now() - inicioBusqueda) / 1000)}s` +
+      `[busqueda-video] ${etiqueta} -> ${intentos} intento(s) en ~${Math.round((Date.now() - inicioBusqueda) / 1000)}s` +
       ` (${arranco ? 'encontrado' : 'no encontrado'})`
     );
     if (!arranco) {
-      console.log(`SIN-VIDEO [${embedUrl}] no se encontro un <video> para reproducir`);
+      console.log(`SIN-VIDEO [${etiqueta}] no se encontro un <video> para reproducir`);
       try {
         await mkdir('screenshots', { recursive: true });
         for (const [idx, p] of paginasVistas.entries()) {
@@ -223,9 +230,10 @@ async function darVistaConNavegador(navegador, embedUrl) {
       return false;
     }
 
+    const segundosReproduccion = esVidsSt(embedUrl) ? SEGUNDOS_REPRODUCCION_VIDSST : SEGUNDOS_REPRODUCCION;
     const inicio = Date.now();
     let maxTiempo = 0;
-    while (Date.now() - inicio < SEGUNDOS_REPRODUCCION * 1000) {
+    while (Date.now() - inicio < segundosReproduccion * 1000) {
       await pagina.waitForTimeout(15000);
       const t = await obtenerTiempoActual(recolectarFrames(paginasVistas));
       if (typeof t === 'number') {
@@ -236,7 +244,7 @@ async function darVistaConNavegador(navegador, embedUrl) {
 
     const avanzo = maxTiempo > 2;
     console.log(
-      `${avanzo ? 'OK' : 'ESTANCADO'} [${embedUrl}] reproducido ~${Math.round((Date.now() - inicio) / 1000)}s` +
+      `${avanzo ? 'OK' : 'ESTANCADO'} [${etiqueta}] reproducido ~${Math.round((Date.now() - inicio) / 1000)}s` +
       ` (currentTime maximo visto: ${maxTiempo.toFixed(1)}s)`
     );
     return avanzo;
@@ -267,7 +275,10 @@ async function main() {
   const embeds = ARCHIVO_URLS_A_PROCESAR
     ? JSON.parse(await readFile(ARCHIVO_URLS_A_PROCESAR, 'utf8'))
     : await recolectarEmbeds();
-  console.log(`Encontrados ${embeds.length} embed(s) para darles vista (${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${CONCURRENCIA} en paralelo).`);
+  console.log(
+    `Encontrados ${embeds.length} embed(s) para darles vista ` +
+    `(${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${SEGUNDOS_REPRODUCCION_VIDSST}s para vids.st, ${CONCURRENCIA} en paralelo).`
+  );
   if (!embeds.length) {
     if (ARCHIVO_RESULTADOS) await writeFile(ARCHIVO_RESULTADOS, '[]');
     return;
@@ -282,7 +293,7 @@ async function main() {
     for (let i = 0; i < embeds.length; i += CONCURRENCIA) {
       const lote = embeds.slice(i, i + CONCURRENCIA);
       const lote_resultados = await Promise.all(
-        lote.map((url) => conTope(darVistaConNavegador(navegador, url), TOPE_POR_LINK_MS, url))
+        lote.map((url) => conTope(darVistaConNavegador(navegador, url), topePorLinkMs(url), url))
       );
       lote.forEach((url, idx) => resultados.push({ url, ok: lote_resultados[idx] }));
     }
