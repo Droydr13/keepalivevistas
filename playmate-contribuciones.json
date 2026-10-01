@@ -2915,5 +2915,24 @@
     "peso": null,
     "agregado": "2026-10-01T03:27:24.377Z",
     "ultimaRevision": "2026-10-01T03:27:24.377Z"
+  },
+  {
+    "imdbId": "tt30217403",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/jdl9kB83zY1ucHkcvrK5qoOKAQJEb3oE/master.txt",
+    "embedUrl": "https://playmate.to/embed/fwkbvWG8JZTd",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "DAN DA DAN",
+    "peso": null,
+    "agregado": "2026-10-01T03:27:34.472Z",
+    "ultimaRevision": "2026-10-01T03:27:34.472Z"
   }
 ]
