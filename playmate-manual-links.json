@@ -886,5 +886,39 @@
     "peso": null,
     "agregado": "2026-10-02T06:00:29.637Z",
     "ultimaRevision": "2026-10-02T06:00:29.637Z"
+  },
+  {
+    "imdbId": "tt36957934",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/Iate4sSGP4vTl6AojA734iLV3E5OAqdi/master.txt",
+    "embedUrl": "https://playmate.to/embed/lEtgx0Cj9waW",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Netflix",
+    "titulo": "Errores épicos",
+    "peso": null,
+    "agregado": "2026-10-02T06:00:31.415Z",
+    "ultimaRevision": "2026-10-02T06:00:31.415Z"
+  },
+  {
+    "imdbId": "tt36957934",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/v2Xr6B2tV4Oor8C7dGvIJy27YUPLj9TT/master.txt",
+    "embedUrl": "https://playmate.to/embed/Ej1jWb006yDi",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Netflix",
+    "titulo": "Errores épicos",
+    "peso": null,
+    "agregado": "2026-10-02T06:00:33.072Z",
+    "ultimaRevision": "2026-10-02T06:00:33.072Z"
   }
 ]
