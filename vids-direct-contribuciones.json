@@ -9065,5 +9065,23 @@
     "peso": "1 GB",
     "agregado": "2026-10-01T20:10:50.986Z",
     "ultimaRevision": "2026-10-01T20:10:50.986Z"
+  },
+  {
+    "imdbId": "tt0090094",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video175864/1000240946.webm",
+    "referer": "https://vids.st/e/175864",
+    "embedUrl": "https://vids.st/e/175864",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "La Sustancia Maldita",
+    "peso": null,
+    "agregado": "2026-10-02T18:54:11.907Z",
+    "ultimaRevision": "2026-10-02T18:54:11.907Z"
   }
 ]
