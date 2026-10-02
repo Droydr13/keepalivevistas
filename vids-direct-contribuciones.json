@@ -9083,5 +9083,29 @@
     "peso": null,
     "agregado": "2026-10-02T18:54:11.907Z",
     "ultimaRevision": "2026-10-02T18:54:11.907Z"
+  },
+  {
+    "imdbId": "tt0381707",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video175942/1000161416.mkv",
+    "referer": "https://vids.st/e/175942",
+    "embedUrl": "https://vids.st/e/175942",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "¿...Y Dónde Están las Rubias?",
+    "peso": "4GB",
+    "agregado": "2026-10-02T20:40:26.219Z",
+    "ultimaRevision": "2026-10-02T20:40:26.219Z"
   }
 ]
