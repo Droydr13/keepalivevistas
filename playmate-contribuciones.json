@@ -3255,5 +3255,24 @@
     "peso": null,
     "agregado": "2026-10-02T18:54:10.877Z",
     "ultimaRevision": "2026-10-02T18:54:10.877Z"
+  },
+  {
+    "imdbId": "tt30217403",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/1R0xCkyNDShVJcgehBJMGyS5C8y91V2O/master.txt",
+    "embedUrl": "https://playmate.to/embed/hL92bC9ns9dr",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "DAN DA DAN",
+    "peso": null,
+    "agregado": "2026-10-02T18:54:20.443Z",
+    "ultimaRevision": "2026-10-02T18:54:20.443Z"
   }
 ]
