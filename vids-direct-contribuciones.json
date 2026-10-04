@@ -9131,5 +9131,30 @@
     "peso": "6.1 GB",
     "agregado": "2026-10-03T15:36:14.272Z",
     "ultimaRevision": "2026-10-03T15:36:14.272Z"
+  },
+  {
+    "imdbId": "tt0816711",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video176087/master.m3u8",
+    "referer": "https://vids.st/e/176087",
+    "embedUrl": "https://vids.st/e/176087",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Guerra mundial Z",
+    "peso": "8.9GB",
+    "agregado": "2026-10-04T19:35:55.453Z",
+    "ultimaRevision": "2026-10-04T19:35:55.453Z"
   }
 ]
