@@ -3692,5 +3692,24 @@
     "peso": null,
     "agregado": "2026-10-04T19:32:59.514Z",
     "ultimaRevision": "2026-10-04T19:32:59.514Z"
+  },
+  {
+    "imdbId": "tt9054364",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 16,
+    "url": "https://frv2.plauymito.live/hls/N79eagKicJw3XlUBxudgYz89TF9Oy2qT/master.txt",
+    "embedUrl": "https://playmate.to/embed/bCyMpIyAvEiW",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "That Time I Got Reincarnated as a Slime",
+    "peso": null,
+    "agregado": "2026-10-04T19:33:25.404Z",
+    "ultimaRevision": "2026-10-04T19:33:25.404Z"
   }
 ]
