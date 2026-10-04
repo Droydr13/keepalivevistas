@@ -9276,5 +9276,65 @@
     "peso": null,
     "agregado": "2026-10-04T20:54:40.631Z",
     "ultimaRevision": "2026-10-04T20:54:40.631Z"
+  },
+  {
+    "imdbId": "tt0434685",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 12,
+    "url": "https://vids.st/storage/uploads/video175421/gantz-12.mp4",
+    "referer": "https://vids.st/e/175421",
+    "embedUrl": "https://vids.st/e/175421",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Gantz",
+    "peso": null,
+    "agregado": "2026-10-04T20:54:41.520Z",
+    "ultimaRevision": "2026-10-04T20:54:41.520Z"
+  },
+  {
+    "imdbId": "tt0434685",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 11,
+    "url": "https://vids.st/storage/uploads/video173111/gantz-11.mp4",
+    "referer": "https://vids.st/e/173111",
+    "embedUrl": "https://vids.st/e/173111",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Gantz",
+    "peso": null,
+    "agregado": "2026-10-04T20:54:41.828Z",
+    "ultimaRevision": "2026-10-04T20:54:41.829Z"
+  },
+  {
+    "imdbId": "tt0434685",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 11,
+    "url": "https://vids.st/storage/uploads/video173111/gantz-11.mp4",
+    "referer": "https://vids.st/e/173111",
+    "embedUrl": "https://vids.st/e/173111",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Gantz",
+    "peso": null,
+    "agregado": "2026-10-04T20:54:43.169Z",
+    "ultimaRevision": "2026-10-04T20:54:43.169Z"
   }
 ]
