@@ -3331,5 +3331,24 @@
     "peso": null,
     "agregado": "2026-10-02T18:54:46.358Z",
     "ultimaRevision": "2026-10-02T18:54:46.359Z"
+  },
+  {
+    "imdbId": "tt42186253",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/XAhUlq2XGMbYP2CcuZUVGkq9J1kmw5Iy/master.txt",
+    "embedUrl": "https://playmate.to/embed/9igxBu8kXJDS",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "La heroína del moño",
+    "peso": "2.00 GB",
+    "agregado": "2026-10-04T04:42:20.062Z",
+    "ultimaRevision": "2026-10-04T04:42:20.062Z"
   }
 ]
