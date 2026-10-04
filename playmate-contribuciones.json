@@ -4414,5 +4414,24 @@
     "peso": null,
     "agregado": "2026-10-04T21:00:40.292Z",
     "ultimaRevision": "2026-10-04T21:00:40.292Z"
+  },
+  {
+    "imdbId": "tt32869308",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://frv2.plauymito.live/hls/xBTLl7jW4kzOOijqHxFWop38vuqKGxmN/master.txt",
+    "embedUrl": "https://playmate.to/embed/uPpCsnlUN8VQ",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Tomb Raider King",
+    "peso": null,
+    "agregado": "2026-10-04T21:00:47.387Z",
+    "ultimaRevision": "2026-10-04T21:00:47.387Z"
   }
 ]
