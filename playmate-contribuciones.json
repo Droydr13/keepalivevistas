@@ -4205,5 +4205,24 @@
     "peso": null,
     "agregado": "2026-10-04T20:57:57.999Z",
     "ultimaRevision": "2026-10-04T20:57:57.999Z"
+  },
+  {
+    "imdbId": "tt21030032",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/ZKd2Y9sqD7qmU5w3KyAae5dtYvNY18Nc/master.txt",
+    "embedUrl": "https://playmate.to/embed/Bnuli5XUbnpu",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Oshi no Ko",
+    "peso": null,
+    "agregado": "2026-10-04T20:58:07.477Z",
+    "ultimaRevision": "2026-10-04T20:58:07.477Z"
   }
 ]
