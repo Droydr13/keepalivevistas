@@ -13324,5 +13324,153 @@
     "peso": "100 MB",
     "agregado": "2026-10-05T14:40:32.262Z",
     "ultimaRevision": "2026-10-05T14:40:32.262Z"
+  },
+  {
+    "imdbId": "tt2339875",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 20,
+    "url": "https://vids.st/storage/uploads/video176854/az-animex-accel-world-20-bd-axznf.mp4",
+    "referer": "https://vids.st/e/176854",
+    "embedUrl": "https://vids.st/e/176854",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Accel World",
+    "peso": "100 MB",
+    "agregado": "2026-10-05T18:31:22.955Z",
+    "ultimaRevision": "2026-10-05T18:31:22.955Z"
+  },
+  {
+    "imdbId": "tt2339875",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 21,
+    "url": "https://vids.st/storage/uploads/video176855/az-animex-accel-world-21-bd-axznf.mp4",
+    "referer": "https://vids.st/e/176855",
+    "embedUrl": "https://vids.st/e/176855",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Accel World",
+    "peso": "100 MB",
+    "agregado": "2026-10-05T18:31:26.183Z",
+    "ultimaRevision": "2026-10-05T18:31:26.183Z"
+  },
+  {
+    "imdbId": "tt2339875",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 22,
+    "url": "https://vids.st/storage/uploads/video176856/az-animex-accel-world-22-bd-axznf.mp4",
+    "referer": "https://vids.st/e/176856",
+    "embedUrl": "https://vids.st/e/176856",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Accel World",
+    "peso": "100 MB",
+    "agregado": "2026-10-05T18:31:27.927Z",
+    "ultimaRevision": "2026-10-05T18:31:27.927Z"
+  },
+  {
+    "imdbId": "tt2339875",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 23,
+    "url": "https://vids.st/storage/uploads/video176857/az-animex-accel-world-23-bd-axznf.mp4",
+    "referer": "https://vids.st/e/176857",
+    "embedUrl": "https://vids.st/e/176857",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Accel World",
+    "peso": "100 MB",
+    "agregado": "2026-10-05T18:31:29.435Z",
+    "ultimaRevision": "2026-10-05T18:31:29.435Z"
+  },
+  {
+    "imdbId": "tt2339875",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 24,
+    "url": "https://vids.st/storage/uploads/video176858/az-animex-accel-world-24-bd-axznf.mp4",
+    "referer": "https://vids.st/e/176858",
+    "embedUrl": "https://vids.st/e/176858",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Accel World",
+    "peso": "100 MB",
+    "agregado": "2026-10-05T18:31:30.921Z",
+    "ultimaRevision": "2026-10-05T18:31:30.922Z"
+  },
+  {
+    "imdbId": "tt5923132",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video176861/az-animex-accel-world-infinite-burst-bd-hakoniwa.mp4",
+    "referer": "https://vids.st/e/176861",
+    "embedUrl": "https://vids.st/e/176861",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Accel World - Infinite Burst",
+    "peso": "481 MB",
+    "agregado": "2026-10-05T18:31:32.426Z",
+    "ultimaRevision": "2026-10-05T18:31:32.426Z"
+  },
+  {
+    "imdbId": "tt39143902",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video177090/master.m3u8",
+    "referer": "https://vids.st/e/177090",
+    "embedUrl": "https://vids.st/e/177090",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Leviticus: Ritual de sangre",
+    "peso": "3.7GB",
+    "agregado": "2026-10-05T18:31:34.280Z",
+    "ultimaRevision": "2026-10-05T18:31:34.280Z"
   }
 ]
