@@ -4737,5 +4737,24 @@
     "peso": null,
     "agregado": "2026-10-05T03:57:37.628Z",
     "ultimaRevision": "2026-10-05T03:57:37.628Z"
+  },
+  {
+    "imdbId": "tt2789238",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 20,
+    "url": "https://frv2.plauymito.live/hls/PxvTOaNoQWZaATSo5QG9Fj3HyEY55xHw/master.txt",
+    "embedUrl": "https://playmate.to/embed/nz4wUJm9vd4H",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Strike The Blood",
+    "peso": null,
+    "agregado": "2026-10-05T03:57:46.022Z",
+    "ultimaRevision": "2026-10-05T03:57:46.022Z"
   }
 ]
