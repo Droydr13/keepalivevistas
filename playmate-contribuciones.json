@@ -4566,5 +4566,24 @@
     "peso": null,
     "agregado": "2026-10-04T21:14:15.459Z",
     "ultimaRevision": "2026-10-04T21:14:15.460Z"
+  },
+  {
+    "imdbId": "tt32915652",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/0JLwIFVzQSNZ3sOOkP5j3omnbYc6UHxb/master.txt",
+    "embedUrl": "https://playmate.to/embed/z5Ph86lOpmsv",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Mobile Suit Gundam Hathaway: El hechizo de una ninfa",
+    "peso": null,
+    "agregado": "2026-10-05T03:56:35.709Z",
+    "ultimaRevision": "2026-10-05T03:56:35.709Z"
   }
 ]
