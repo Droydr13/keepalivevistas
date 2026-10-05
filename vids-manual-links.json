@@ -230,5 +230,26 @@
     "peso": "1.87 GB",
     "agregado": "2026-10-01T16:12:15.673Z",
     "ultimaRevision": "2026-10-01T16:12:15.673Z"
+  },
+  {
+    "imdbId": "tt1155076",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video176761/master.m3u8",
+    "referer": "https://vids.st/e/176761",
+    "embedUrl": "https://vids.st/e/176761",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": null,
+    "titulo": "Karate Kid",
+    "peso": null,
+    "agregado": "2026-10-05T01:09:47.271Z",
+    "ultimaRevision": "2026-10-05T01:09:47.271Z"
   }
 ]
