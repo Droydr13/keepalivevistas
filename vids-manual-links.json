@@ -239,8 +239,11 @@
     "url": "https://vids.st/storage/cdn/video176761/master.m3u8",
     "referer": "https://vids.st/e/176761",
     "embedUrl": "https://vids.st/e/176761",
-    "idioma": "Latino",
-    "idiomaDetalle": [],
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
     "calidad": "1080p",
     "tags": [
       "H264",
@@ -248,7 +251,7 @@
     ],
     "plataforma": null,
     "titulo": "Karate Kid",
-    "peso": null,
+    "peso": "1.09 GB",
     "agregado": "2026-10-05T01:09:47.271Z",
     "ultimaRevision": "2026-10-05T01:09:47.271Z"
   }
