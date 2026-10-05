@@ -5174,5 +5174,43 @@
     "peso": null,
     "agregado": "2026-10-05T04:01:27.653Z",
     "ultimaRevision": "2026-10-05T04:01:27.653Z"
+  },
+  {
+    "imdbId": "tt32991344",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 9,
+    "url": "https://frv2.plauymito.live/hls/g623u7PSUu9RAaaTX8XKMkEN8EP5DUCE/master.txt",
+    "embedUrl": "https://playmate.to/embed/tMSg4QChh1kI",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Clevatess",
+    "peso": null,
+    "agregado": "2026-10-05T04:01:39.286Z",
+    "ultimaRevision": "2026-10-05T04:01:39.286Z"
+  },
+  {
+    "imdbId": "tt32991344",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/wku8Yv261eAKTpHh960L5FZkf7wS2HP1/master.txt",
+    "embedUrl": "https://playmate.to/embed/xABmuLrRxcdG",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Clevatess",
+    "peso": null,
+    "agregado": "2026-10-05T04:01:46.870Z",
+    "ultimaRevision": "2026-10-05T04:01:46.870Z"
   }
 ]
