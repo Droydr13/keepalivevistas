@@ -5155,5 +5155,24 @@
     "peso": null,
     "agregado": "2026-10-05T04:01:20.215Z",
     "ultimaRevision": "2026-10-05T04:01:20.215Z"
+  },
+  {
+    "imdbId": "tt32991344",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 10,
+    "url": "https://frv2.plauymito.live/hls/mYynEJm4IlxJD5qixZipVCYgeON3npeV/master.txt",
+    "embedUrl": "https://playmate.to/embed/Kl1R3iyAskts",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Clevatess",
+    "peso": null,
+    "agregado": "2026-10-05T04:01:27.653Z",
+    "ultimaRevision": "2026-10-05T04:01:27.653Z"
   }
 ]
