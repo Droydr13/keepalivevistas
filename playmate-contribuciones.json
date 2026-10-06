@@ -6064,5 +6064,24 @@
     "peso": null,
     "agregado": "2026-10-06T19:35:01.393Z",
     "ultimaRevision": "2026-10-06T19:35:01.393Z"
+  },
+  {
+    "imdbId": "tt15483602",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 11,
+    "url": "https://frv2.plauymito.live/hls/ZSGW5rfFxgZiY3DVerPwIOM3TEbIYytD/master.txt",
+    "embedUrl": "https://playmate.to/embed/IQ2YAlvPKGWd",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H265"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Reincarnated as a Sword",
+    "peso": null,
+    "agregado": "2026-10-06T19:35:08.826Z",
+    "ultimaRevision": "2026-10-06T19:35:08.826Z"
   }
 ]
