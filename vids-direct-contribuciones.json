@@ -13762,5 +13762,429 @@
     "peso": "5.4GB",
     "agregado": "2026-10-06T02:27:18.688Z",
     "ultimaRevision": "2026-10-06T02:27:18.688Z"
+  },
+  {
+    "imdbId": "tt2802144",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video177188/master.m3u8",
+    "referer": "https://vids.st/e/177188",
+    "embedUrl": "https://vids.st/e/177188",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Kingsman: El Servicio Secreto",
+    "peso": "5.4GB",
+    "agregado": "2026-10-06T02:27:18.728Z",
+    "ultimaRevision": "2026-10-06T02:27:18.728Z"
+  },
+  {
+    "imdbId": "tt22084616",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video177154/master.m3u8",
+    "referer": "https://vids.st/e/177154",
+    "embedUrl": "https://vids.st/e/177154",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Spider-Man: Un nuevo día",
+    "peso": "6GB",
+    "agregado": "2026-10-06T02:32:25.882Z",
+    "ultimaRevision": "2026-10-06T02:32:25.882Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 10,
+    "url": "https://vids.st/storage/cdn/video177082/master.m3u8",
+    "referer": "https://vids.st/e/177082",
+    "embedUrl": "https://vids.st/e/177082",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:27.226Z",
+    "ultimaRevision": "2026-10-06T02:32:27.226Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 9,
+    "url": "https://vids.st/storage/cdn/video177081/master.m3u8",
+    "referer": "https://vids.st/e/177081",
+    "embedUrl": "https://vids.st/e/177081",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:28.588Z",
+    "ultimaRevision": "2026-10-06T02:32:28.588Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 8,
+    "url": "https://vids.st/storage/cdn/video177080/master.m3u8",
+    "referer": "https://vids.st/e/177080",
+    "embedUrl": "https://vids.st/e/177080",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:29.932Z",
+    "ultimaRevision": "2026-10-06T02:32:29.932Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://vids.st/storage/cdn/video177079/master.m3u8",
+    "referer": "https://vids.st/e/177079",
+    "embedUrl": "https://vids.st/e/177079",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:31.268Z",
+    "ultimaRevision": "2026-10-06T02:32:31.268Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://vids.st/storage/cdn/video177078/master.m3u8",
+    "referer": "https://vids.st/e/177078",
+    "embedUrl": "https://vids.st/e/177078",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:32.632Z",
+    "ultimaRevision": "2026-10-06T02:32:32.632Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://vids.st/storage/cdn/video177078/master.m3u8",
+    "referer": "https://vids.st/e/177078",
+    "embedUrl": "https://vids.st/e/177078",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:33.736Z",
+    "ultimaRevision": "2026-10-06T02:32:33.736Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://vids.st/storage/cdn/video177077/master.m3u8",
+    "referer": "https://vids.st/e/177077",
+    "embedUrl": "https://vids.st/e/177077",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:33.965Z",
+    "ultimaRevision": "2026-10-06T02:32:33.965Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://vids.st/storage/cdn/video177077/master.m3u8",
+    "referer": "https://vids.st/e/177077",
+    "embedUrl": "https://vids.st/e/177077",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:35.185Z",
+    "ultimaRevision": "2026-10-06T02:32:35.186Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://vids.st/storage/cdn/video177076/master.m3u8",
+    "referer": "https://vids.st/e/177076",
+    "embedUrl": "https://vids.st/e/177076",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:35.345Z",
+    "ultimaRevision": "2026-10-06T02:32:35.345Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://vids.st/storage/cdn/video177076/master.m3u8",
+    "referer": "https://vids.st/e/177076",
+    "embedUrl": "https://vids.st/e/177076",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:36.520Z",
+    "ultimaRevision": "2026-10-06T02:32:36.520Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://vids.st/storage/cdn/video176893/master.m3u8",
+    "referer": "https://vids.st/e/176893",
+    "embedUrl": "https://vids.st/e/176893",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:37.598Z",
+    "ultimaRevision": "2026-10-06T02:32:37.598Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://vids.st/storage/cdn/video176893/master.m3u8",
+    "referer": "https://vids.st/e/176893",
+    "embedUrl": "https://vids.st/e/176893",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:38.805Z",
+    "ultimaRevision": "2026-10-06T02:32:38.805Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/cdn/video176892/master.m3u8",
+    "referer": "https://vids.st/e/176892",
+    "embedUrl": "https://vids.st/e/176892",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:39.229Z",
+    "ultimaRevision": "2026-10-06T02:32:39.229Z"
+  },
+  {
+    "imdbId": "tt14681924",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/cdn/video176892/master.m3u8",
+    "referer": "https://vids.st/e/176892",
+    "embedUrl": "https://vids.st/e/176892",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Mis Aventuras con Superman",
+    "peso": "1GB",
+    "agregado": "2026-10-06T02:32:40.157Z",
+    "ultimaRevision": "2026-10-06T02:32:40.157Z"
+  },
+  {
+    "imdbId": "tt0029583",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video177101/master.m3u8",
+    "referer": "https://vids.st/e/177101",
+    "embedUrl": "https://vids.st/e/177101",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Blanca Nieves y los siete enanos",
+    "peso": "3.2GB",
+    "agregado": "2026-10-06T02:32:40.572Z",
+    "ultimaRevision": "2026-10-06T02:32:40.572Z"
   }
 ]
