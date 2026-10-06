@@ -5684,5 +5684,24 @@
     "peso": null,
     "agregado": "2026-10-06T02:22:50.642Z",
     "ultimaRevision": "2026-10-06T02:22:50.642Z"
+  },
+  {
+    "imdbId": "tt13311344",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 15,
+    "url": "https://frv2.plauymito.live/hls/GlsCwYXMqbIqg8kDJdge1NQNKrL2bQsx/master.txt",
+    "embedUrl": "https://playmate.to/embed/jFJWvpWNpaRt",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Tsukimichi: Moonlit Fantasy",
+    "peso": null,
+    "agregado": "2026-10-06T02:23:05.995Z",
+    "ultimaRevision": "2026-10-06T02:23:05.995Z"
   }
 ]
