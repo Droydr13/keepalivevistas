@@ -14462,5 +14462,52 @@
     "peso": "2.84 GB",
     "agregado": "2026-10-06T19:31:01.606Z",
     "ultimaRevision": "2026-10-06T19:31:01.606Z"
+  },
+  {
+    "imdbId": "tt22084616",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video177917/master.m3u8",
+    "referer": "https://vids.st/e/177917",
+    "embedUrl": "https://vids.st/e/177917",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Spider-Man: Un nuevo día",
+    "peso": "2.84 GB",
+    "agregado": "2026-10-06T19:31:01.807Z",
+    "ultimaRevision": "2026-10-06T19:31:01.807Z"
+  },
+  {
+    "imdbId": "tt0386676",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 23,
+    "url": "https://vids.st/storage/cdn/video177581/master.m3u8",
+    "referer": "https://vids.st/e/177581",
+    "embedUrl": "https://vids.st/e/177581",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "La Oficina",
+    "peso": "500MB",
+    "agregado": "2026-10-06T19:39:12.950Z",
+    "ultimaRevision": "2026-10-06T19:39:12.950Z"
   }
 ]
