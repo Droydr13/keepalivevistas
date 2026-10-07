@@ -6785,5 +6785,27 @@
     "peso": null,
     "agregado": "2026-10-07T20:36:40.312Z",
     "ultimaRevision": "2026-10-07T20:36:40.312Z"
+  },
+  {
+    "imdbId": "tt29355505",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/guYIdr2IgSxkNtgOYjN9aGBxayImVGrJ/master.txt",
+    "embedUrl": "https://playmate.to/embed/AAdzbEYdl21p",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Toy Story 5",
+    "peso": "2.01 GB",
+    "agregado": "2026-10-07T20:47:21.228Z",
+    "ultimaRevision": "2026-10-07T20:47:21.228Z"
   }
 ]
