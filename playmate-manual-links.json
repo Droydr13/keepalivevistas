@@ -1011,5 +1011,28 @@
     "peso": "3.64 GB",
     "agregado": "2026-10-07T15:55:18.946Z",
     "ultimaRevision": "2026-10-07T15:55:18.946Z"
+  },
+  {
+    "imdbId": "tt0241527",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/heCkKEzoGxEd5E6iuPs4mEfYmaoTM9qi/master.txt",
+    "embedUrl": "https://playmate.to/embed/GWbSoi7FJaVd",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "HBO",
+    "titulo": "Harry Potter y la piedra filosofal",
+    "peso": "15.15 GB",
+    "agregado": "2026-10-07T18:59:36.995Z",
+    "ultimaRevision": "2026-10-07T18:59:36.995Z"
   }
 ]
