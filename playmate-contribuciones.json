@@ -6322,5 +6322,27 @@
     "peso": "5.6GB",
     "agregado": "2026-10-07T01:59:13.075Z",
     "ultimaRevision": "2026-10-07T01:59:13.075Z"
+  },
+  {
+    "imdbId": "tt8579674",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/c5daBeS3iia67kQbVrbs02DQJ9OECn87/master.txt",
+    "embedUrl": "https://playmate.to/embed/EKGUjEnPgnge",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "1917",
+    "peso": "2.27 GB",
+    "agregado": "2026-10-07T01:59:21.985Z",
+    "ultimaRevision": "2026-10-07T01:59:21.985Z"
   }
 ]
