@@ -6605,5 +6605,27 @@
     "peso": "1.72 GB",
     "agregado": "2026-10-07T20:34:41.699Z",
     "ultimaRevision": "2026-10-07T20:34:41.699Z"
+  },
+  {
+    "imdbId": "tt32820897",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/MBgIaO8u8MhIfwknI6xg3ltcPQINf3Y6/master.txt",
+    "embedUrl": "https://playmate.to/embed/dxrVcGHzkth9",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Demon Slayer: Kimetsu no Yaiba Castillo infinito",
+    "peso": "3.05 GB",
+    "agregado": "2026-10-07T20:34:50.369Z",
+    "ultimaRevision": "2026-10-07T20:34:50.369Z"
   }
 ]
