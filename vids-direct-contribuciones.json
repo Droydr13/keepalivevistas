@@ -16086,5 +16086,73 @@
     "peso": "500MB",
     "agregado": "2026-10-07T20:35:52.950Z",
     "ultimaRevision": "2026-10-07T20:35:52.950Z"
+  },
+  {
+    "imdbId": "tt0386676",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 19,
+    "url": "https://vids.st/storage/cdn/video178517/master.m3u8",
+    "referer": "https://vids.st/e/178517",
+    "embedUrl": "https://vids.st/e/178517",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "La Oficina",
+    "peso": "500MB",
+    "agregado": "2026-10-07T20:35:53.376Z",
+    "ultimaRevision": "2026-10-07T20:35:53.376Z"
+  },
+  {
+    "imdbId": "tt0386676",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 19,
+    "url": "https://vids.st/storage/cdn/video178517/master.m3u8",
+    "referer": "https://vids.st/e/178517",
+    "embedUrl": "https://vids.st/e/178517",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "La Oficina",
+    "peso": "500MB",
+    "agregado": "2026-10-07T20:35:54.127Z",
+    "ultimaRevision": "2026-10-07T20:35:54.127Z"
+  },
+  {
+    "imdbId": "tt33478321",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video178717/Moriras-en-6-horas-2024-1080p-60FPS-Latino-Coreano-vip.hdlatino.us.mkv",
+    "referer": "https://vids.st/e/178717",
+    "embedUrl": "https://vids.st/e/178717",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Morirás en 6 horas",
+    "peso": "6.85 GB",
+    "agregado": "2026-10-07T20:43:04.333Z",
+    "ultimaRevision": "2026-10-07T20:43:04.333Z"
   }
 ]
