@@ -6940,5 +6940,24 @@
     "peso": null,
     "agregado": "2026-10-07T20:48:31.546Z",
     "ultimaRevision": "2026-10-07T20:48:31.546Z"
+  },
+  {
+    "imdbId": "tt10443362",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/izQh5envtB7YMqdH6HhpsCjas3sR2sKj/master.txt",
+    "embedUrl": "https://playmate.to/embed/uFbhNXldndwT",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Demon Lord Retry!",
+    "peso": null,
+    "agregado": "2026-10-07T20:48:39.343Z",
+    "ultimaRevision": "2026-10-07T20:48:39.343Z"
   }
 ]
