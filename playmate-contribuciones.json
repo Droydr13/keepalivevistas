@@ -6273,5 +6273,29 @@
     "peso": null,
     "agregado": "2026-10-06T19:38:40.728Z",
     "ultimaRevision": "2026-10-06T19:38:40.728Z"
+  },
+  {
+    "imdbId": "tt31192372",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/rLNjuROa2wa5nGbDEDIUHRl3W73uYDkN/master.txt",
+    "embedUrl": "https://playmate.to/embed/dTiMDVGBPrcT",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Vértigo 2: Punto muerto",
+    "peso": "6.4GB",
+    "agregado": "2026-10-07T01:59:04.074Z",
+    "ultimaRevision": "2026-10-07T01:59:04.074Z"
   }
 ]
