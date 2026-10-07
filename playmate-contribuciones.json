@@ -6627,5 +6627,27 @@
     "peso": "3.05 GB",
     "agregado": "2026-10-07T20:34:50.369Z",
     "ultimaRevision": "2026-10-07T20:34:50.369Z"
+  },
+  {
+    "imdbId": "tt36282134",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/4LUHoxDDE0rCDhqXNygheQWYMb1WdgKk/master.txt",
+    "embedUrl": "https://playmate.to/embed/hansH6BpvVzK",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "劇場版モノノ怪 第三章 蛇神",
+    "peso": "1.73 GB",
+    "agregado": "2026-10-07T20:34:57.684Z",
+    "ultimaRevision": "2026-10-07T20:34:57.684Z"
   }
 ]
