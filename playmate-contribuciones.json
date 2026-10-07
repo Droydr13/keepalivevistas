@@ -6420,5 +6420,24 @@
     "peso": null,
     "agregado": "2026-10-07T02:00:20.448Z",
     "ultimaRevision": "2026-10-07T02:00:20.448Z"
+  },
+  {
+    "imdbId": "tt38895862",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/QABxVV0cQZnsx7eBD8j4svyBhCvEEfJh/master.txt",
+    "embedUrl": "https://playmate.to/embed/mEKor5P5KB6Y",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Yowayowa Sensei",
+    "peso": null,
+    "agregado": "2026-10-07T02:00:28.106Z",
+    "ultimaRevision": "2026-10-07T02:00:28.106Z"
   }
 ]
