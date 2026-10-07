@@ -988,5 +988,28 @@
     "peso": null,
     "agregado": "2026-10-02T06:00:39.495Z",
     "ultimaRevision": "2026-10-02T06:00:39.495Z"
+  },
+  {
+    "imdbId": "tt0405325",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/gDG2WgyajbapY2T3OznpnOlA3k8qd9gO/master.txt",
+    "embedUrl": "https://playmate.to/embed/BXe3NaXnW0s5",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "BDRIP"
+    ],
+    "plataforma": "Disney",
+    "titulo": "Súper Escuela de Héroes",
+    "peso": "3.64 GB",
+    "agregado": "2026-10-07T15:55:13.090Z",
+    "ultimaRevision": "2026-10-07T15:55:13.090Z"
   }
 ]
