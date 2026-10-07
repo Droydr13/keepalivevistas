@@ -6649,5 +6649,27 @@
     "peso": "1.73 GB",
     "agregado": "2026-10-07T20:34:57.684Z",
     "ultimaRevision": "2026-10-07T20:34:57.684Z"
+  },
+  {
+    "imdbId": "tt9507276",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/NGKVOgVTsTBzZtSFwOIcYJrB9V63Ha4f/master.txt",
+    "embedUrl": "https://playmate.to/embed/DmZ7qzaVtZVy",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyoll",
+    "titulo": "Saga of Tanya the Evil: The Movie",
+    "peso": "1.91 GB",
+    "agregado": "2026-10-07T20:35:04.362Z",
+    "ultimaRevision": "2026-10-07T20:35:04.362Z"
   }
 ]
