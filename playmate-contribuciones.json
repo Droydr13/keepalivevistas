@@ -6981,5 +6981,24 @@
     "peso": "2.59 GB",
     "agregado": "2026-10-08T16:11:53.315Z",
     "ultimaRevision": "2026-10-08T16:11:53.315Z"
+  },
+  {
+    "imdbId": "tt6455986",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 11,
+    "url": "https://frv2.plauymito.live/hls/AELy0ksXrqju1crAoS8GtxkRQ2x2nqHJ/master.txt",
+    "embedUrl": "https://playmate.to/embed/pX3wp1aeK8MR",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Saga of Tanya The Evil",
+    "peso": "170.20 MB",
+    "agregado": "2026-10-08T16:12:12.061Z",
+    "ultimaRevision": "2026-10-08T16:12:12.061Z"
   }
 ]
