@@ -7171,5 +7171,27 @@
     "peso": null,
     "agregado": "2026-10-08T16:13:45.417Z",
     "ultimaRevision": "2026-10-08T16:13:45.417Z"
+  },
+  {
+    "imdbId": "tt27419466",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/jXgnDyl2wQoChR1qGsjvrIKa9D2MtYnd/master.txt",
+    "embedUrl": "https://playmate.to/embed/WymwEjNbd4v9",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Moana",
+    "peso": "2.24 GB",
+    "agregado": "2026-10-08T19:01:09.410Z",
+    "ultimaRevision": "2026-10-08T19:01:09.410Z"
   }
 ]
