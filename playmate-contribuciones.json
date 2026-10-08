@@ -7212,5 +7212,24 @@
     "peso": "278.92 MB",
     "agregado": "2026-10-08T19:01:18.328Z",
     "ultimaRevision": "2026-10-08T19:01:18.328Z"
+  },
+  {
+    "imdbId": "tt16255458",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 11,
+    "url": "https://frv2.plauymito.live/hls/Gv2pPEftZfLxydmS3JERQ59wa0t1jCvj/master.txt",
+    "embedUrl": "https://playmate.to/embed/A0dEDSU5zO1p",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Otome Game Sekai wa Mob ni Kibishii Sekai desu",
+    "peso": "225.42 MB",
+    "agregado": "2026-10-08T19:02:03.887Z",
+    "ultimaRevision": "2026-10-08T19:02:03.887Z"
   }
 ]
