@@ -17241,5 +17241,103 @@
     "peso": null,
     "agregado": "2026-10-08T19:00:32.016Z",
     "ultimaRevision": "2026-10-08T19:00:32.016Z"
+  },
+  {
+    "imdbId": "tt14962432",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://vids.st/storage/uploads/video178356/overflow5.mp4",
+    "referer": "https://vids.st/e/178356",
+    "embedUrl": "https://vids.st/e/178356",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Overflow",
+    "peso": null,
+    "agregado": "2026-10-08T23:38:47.032Z",
+    "ultimaRevision": "2026-10-08T23:38:47.032Z"
+  },
+  {
+    "imdbId": "tt14962432",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://vids.st/storage/uploads/video178353/overflow6.mp4",
+    "referer": "https://vids.st/e/178353",
+    "embedUrl": "https://vids.st/e/178353",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Overflow",
+    "peso": null,
+    "agregado": "2026-10-08T23:38:48.448Z",
+    "ultimaRevision": "2026-10-08T23:38:48.448Z"
+  },
+  {
+    "imdbId": "tt14962432",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://vids.st/storage/uploads/video178351/overflow07lat.mp4",
+    "referer": "https://vids.st/e/178351",
+    "embedUrl": "https://vids.st/e/178351",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Overflow",
+    "peso": null,
+    "agregado": "2026-10-08T23:38:49.904Z",
+    "ultimaRevision": "2026-10-08T23:38:49.904Z"
+  },
+  {
+    "imdbId": "tt26743760",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 1,
+    "url": "https://vids.st/storage/uploads/video179121/Los-diarios-de-la-boticaria---S03E49-1080p-.mkv",
+    "referer": "https://vids.st/e/179121",
+    "embedUrl": "https://vids.st/e/179121",
+    "idioma": "Japonés",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Los diarios de la boticaria",
+    "peso": null,
+    "agregado": "2026-10-08T23:38:51.292Z",
+    "ultimaRevision": "2026-10-08T23:38:51.292Z"
+  },
+  {
+    "imdbId": "tt7441658",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 1,
+    "url": "https://vids.st/storage/uploads/video179234/Black-Clover---S06E171-1080p-.mkv",
+    "referer": "https://vids.st/e/179234",
+    "embedUrl": "https://vids.st/e/179234",
+    "idioma": "Japonés",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Crunchyroll",
+    "titulo": "Black Clover",
+    "peso": null,
+    "agregado": "2026-10-08T23:38:52.631Z",
+    "ultimaRevision": "2026-10-08T23:38:52.631Z"
   }
 ]
