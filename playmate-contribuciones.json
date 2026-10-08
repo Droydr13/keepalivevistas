@@ -6959,5 +6959,27 @@
     "peso": null,
     "agregado": "2026-10-07T20:48:39.343Z",
     "ultimaRevision": "2026-10-07T20:48:39.343Z"
+  },
+  {
+    "imdbId": "tt22084616",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/Y5bptzvHr7oPoMGvxyhW3vmLSghveMZM/master.txt",
+    "embedUrl": "https://playmate.to/embed/qO8XCS91VnM0",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Spider-Man: Un nuevo día",
+    "peso": "2.59 GB",
+    "agregado": "2026-10-08T16:11:53.315Z",
+    "ultimaRevision": "2026-10-08T16:11:53.315Z"
   }
 ]
