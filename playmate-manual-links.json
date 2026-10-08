@@ -1160,5 +1160,26 @@
     "peso": null,
     "agregado": "2026-10-08T20:28:04.839Z",
     "ultimaRevision": "2026-10-08T20:28:04.839Z"
+  },
+  {
+    "imdbId": "tt13929756",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/Ett1qOd6B0fuZcyPHWGrVmVF6CZAW44k/master.txt",
+    "embedUrl": "https://playmate.to/embed/Nf4C1hM7a2Qq",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "HDTV",
+      "AAC"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "La isla Calavera",
+    "peso": null,
+    "agregado": "2026-10-08T20:28:06.688Z",
+    "ultimaRevision": "2026-10-08T20:28:06.688Z"
   }
 ]
