@@ -7231,5 +7231,24 @@
     "peso": "225.42 MB",
     "agregado": "2026-10-08T19:02:03.887Z",
     "ultimaRevision": "2026-10-08T19:02:03.887Z"
+  },
+  {
+    "imdbId": "tt16409202",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/ndZ9HnUEboUWcJqLRq7qjm6ZoW2vB94F/master.txt",
+    "embedUrl": "https://playmate.to/embed/fmMxJN2VDK2V",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "大王饶命",
+    "peso": null,
+    "agregado": "2026-10-08T23:37:45.955Z",
+    "ultimaRevision": "2026-10-08T23:37:45.955Z"
   }
 ]
