@@ -7269,5 +7269,27 @@
     "peso": null,
     "agregado": "2026-10-08T23:37:52.979Z",
     "ultimaRevision": "2026-10-08T23:37:52.979Z"
+  },
+  {
+    "imdbId": "tt36983905",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/QEaJ7PYKBI0RmEgZpZVRafhOOF8b3byK/master.txt",
+    "embedUrl": "https://playmate.to/embed/dxrW4UcoCs3z",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "El hombre que desafió al rey",
+    "peso": "2.49 GB",
+    "agregado": "2026-10-09T17:46:05.550Z",
+    "ultimaRevision": "2026-10-09T17:46:05.550Z"
   }
 ]
