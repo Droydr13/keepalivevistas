@@ -7291,5 +7291,25 @@
     "peso": "2.49 GB",
     "agregado": "2026-10-09T17:46:05.550Z",
     "ultimaRevision": "2026-10-09T17:46:05.550Z"
+  },
+  {
+    "imdbId": "tt0427340",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/BxlhzeYsM7N9IigIUitPFHXASYWW1PQp/master.txt",
+    "embedUrl": "https://playmate.to/embed/RKeZ6ZE8SoMu",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Amos del Universo",
+    "peso": "2.75 GB",
+    "agregado": "2026-10-09T17:47:28.856Z",
+    "ultimaRevision": "2026-10-09T17:47:28.856Z"
   }
 ]
