@@ -7311,5 +7311,27 @@
     "peso": "2.75 GB",
     "agregado": "2026-10-09T17:47:28.856Z",
     "ultimaRevision": "2026-10-09T17:47:28.856Z"
+  },
+  {
+    "imdbId": "tt28498219",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/8vYHQ9hM50dMrDlUh9VYGObiJqiXG2Oi/master.txt",
+    "embedUrl": "https://playmate.to/embed/PrqdfJJg37Ge",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Matchbox: La película",
+    "peso": "2.41 GB",
+    "agregado": "2026-10-11T14:52:17.967Z",
+    "ultimaRevision": "2026-10-11T14:52:17.967Z"
   }
 ]
