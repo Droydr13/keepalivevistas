@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises';
 export const ARCHIVOS_DIRECTOS = [
   'vids-manual-links.json',
   'vids-direct-contribuciones.json',
+  'firestream-manual-links.json',
+  'firestream-contribuciones.json',
 ];
 
 export const ARCHIVOS_PLAYMATE = [
@@ -34,7 +36,8 @@ export async function recolectarEmbedsConFecha() {
   };
   for (const archivo of ARCHIVOS_DIRECTOS) {
     for (const item of await leerJsonSiExiste(archivo)) {
-      if (item && item.referer) marcar(item.referer, item.agregado);
+      const embed = item && (item.referer || item.embedUrl);
+      if (embed) marcar(embed, item.agregado);
     }
   }
   for (const archivo of ARCHIVOS_PLAYMATE) {

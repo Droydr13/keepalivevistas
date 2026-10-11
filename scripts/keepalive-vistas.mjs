@@ -6,10 +6,23 @@ const SEGUNDOS_REPRODUCCION = parseInt(process.env.SEGUNDOS_REPRODUCCION || '180
 const SEGUNDOS_REPRODUCCION_VIDSST = parseInt(process.env.SEGUNDOS_REPRODUCCION_VIDSST || '240', 10);
 const CONCURRENCIA = parseInt(process.env.CONCURRENCIA || '2', 10);
 const SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO || '30', 10);
+const SEGUNDOS_MAXIMOS_BUSQUEDA_FIRESTREAM = parseInt(process.env.SEGUNDOS_MAXIMOS_BUSQUEDA_FIRESTREAM || '150', 10);
+const DIAGNOSTICO = process.env.DIAGNOSTICO === '1';
+const NAVEGADOR = process.env.NAVEGADOR || 'chromium';
+const VISIBLE = process.env.VISIBLE === '1';
+const FORMA_VIDSST = process.env.FORMA_VIDSST || 'v';
+
+function esFirestream(url) {
+  return /firestream\./i.test(url);
+}
+
+function segundosBusqueda(url) {
+  return esFirestream(url) ? SEGUNDOS_MAXIMOS_BUSQUEDA_FIRESTREAM : SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO;
+}
 
 function topePorLinkMs(url) {
   const segundos = esVidsSt(url) ? SEGUNDOS_REPRODUCCION_VIDSST : SEGUNDOS_REPRODUCCION;
-  return (segundos + SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO + 60) * 1000;
+  return (segundos + segundosBusqueda(url) + 60) * 1000;
 }
 
 const ARCHIVO_URLS_A_PROCESAR = process.env.ARCHIVO_URLS_A_PROCESAR || null;
@@ -87,12 +100,45 @@ function nombreSeguro(url) {
 }
 
 function urlParaReproducir(embedUrl) {
+  if (FORMA_VIDSST !== 'v') return embedUrl;
   const m = embedUrl.match(/^https:\/\/vids\.st\/e\/(\d+)\/?$/);
   return m ? `https://vids.st/v/${m[1]}` : embedUrl;
 }
 
 function esVidsSt(embedUrl) {
-  return urlParaReproducir(embedUrl) !== embedUrl;
+  return /^https:\/\/vids\.st\//i.test(embedUrl);
+}
+
+const TIPOS_RED_DIAGNOSTICO = new Set(['xhr', 'fetch', 'beacon', 'ping', 'eventsource', 'websocket']);
+const EXTENSIONES_MEDIA = /\.(ts|m4s|mp4|m3u8|aac|vtt|jpg|jpeg|png|gif|webp|svg|woff2?|css)(\?|$)/i;
+
+function registrarRedDiagnostico(pagina, etiqueta) {
+  pagina.on('response', async (resp) => {
+    try {
+      const req = resp.request();
+      const tipo = req.resourceType();
+      const url = req.url();
+      if (EXTENSIONES_MEDIA.test(url)) return;
+      if (!TIPOS_RED_DIAGNOSTICO.has(tipo) && req.method() !== 'POST') return;
+      let cuerpo = '';
+      const tipoContenido = resp.headers()['content-type'] || '';
+      if (/json|text|javascript/i.test(tipoContenido)) {
+        cuerpo = (await resp.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 300);
+      }
+      const enviado = req.postData() ? ` datos=${req.postData().replace(/\s+/g, ' ').slice(0, 200)}` : '';
+      console.log(`[red] ${etiqueta} ${req.method()} ${resp.status()} (${tipo}) ${url.slice(0, 200)}${enviado}${cuerpo ? ` -> ${cuerpo}` : ''}`);
+    } catch {}
+  });
+}
+
+async function capturar(paginas, embedUrl, momento) {
+  try {
+    await mkdir('screenshots', { recursive: true });
+    for (const [idx, p] of paginas.entries()) {
+      const sufijo = idx === 0 ? '' : `_popup${idx}`;
+      await p.screenshot({ path: `screenshots/${nombreSeguro(embedUrl)}_${momento}${sufijo}.png` }).catch(() => {});
+    }
+  } catch {}
 }
 
 async function ocultarMarcasDeAutomatizacion(contexto) {
@@ -186,6 +232,7 @@ async function darVistaConNavegador(navegador, embedUrl) {
   try {
     const urlNavegacion = urlParaReproducir(embedUrl);
     const etiqueta = urlNavegacion !== embedUrl ? `${embedUrl} (reproducido en ${urlNavegacion})` : embedUrl;
+    if (DIAGNOSTICO) registrarRedDiagnostico(pagina, etiqueta);
     const respuesta = await pagina.goto(urlNavegacion, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await pagina.waitForTimeout(2000);
 
@@ -207,7 +254,7 @@ async function darVistaConNavegador(navegador, embedUrl) {
     const inicioBusqueda = Date.now();
     let arranco = false;
     let intentos = 0;
-    while (!arranco && Date.now() - inicioBusqueda < SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO * 1000) {
+    while (!arranco && Date.now() - inicioBusqueda < segundosBusqueda(embedUrl) * 1000) {
       intentos++;
       arranco = await intentarReproducir(recolectarFrames(paginasVistas), true);
       if (!arranco) await pagina.waitForTimeout(3000);
@@ -230,6 +277,7 @@ async function darVistaConNavegador(navegador, embedUrl) {
       return false;
     }
 
+    if (DIAGNOSTICO) await capturar(paginasVistas, embedUrl, 'inicio');
     const segundosReproduccion = esVidsSt(embedUrl) ? SEGUNDOS_REPRODUCCION_VIDSST : SEGUNDOS_REPRODUCCION;
     const inicio = Date.now();
     let maxTiempo = 0;
@@ -242,6 +290,7 @@ async function darVistaConNavegador(navegador, embedUrl) {
       }
     }
 
+    if (DIAGNOSTICO) await capturar(paginasVistas, embedUrl, 'final');
     const avanzo = maxTiempo > 2;
     console.log(
       `${avanzo ? 'OK' : 'ESTANCADO'} [${etiqueta}] reproducido ~${Math.round((Date.now() - inicio) / 1000)}s` +
@@ -277,7 +326,7 @@ async function main() {
     : await recolectarEmbeds();
   console.log(
     `Encontrados ${embeds.length} embed(s) para darles vista ` +
-    `(${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${SEGUNDOS_REPRODUCCION_VIDSST}s para vids.st, ${CONCURRENCIA} en paralelo).`
+    `(${SEGUNDOS_REPRODUCCION}s de reproduccion c/u, ${SEGUNDOS_REPRODUCCION_VIDSST}s para vids.st, ${CONCURRENCIA} en paralelo, busqueda del video hasta ${SEGUNDOS_MAXIMOS_BUSQUEDA_VIDEO}s y ${SEGUNDOS_MAXIMOS_BUSQUEDA_FIRESTREAM}s para firestream).`
   );
   if (!embeds.length) {
     if (ARCHIVO_RESULTADOS) await writeFile(ARCHIVO_RESULTADOS, '[]');
@@ -285,9 +334,15 @@ async function main() {
   }
 
   const navegador = await chromium.launch({
-    headless: true,
-    args: ['--disable-blink-features=AutomationControlled', '--headless=new'],
+    headless: !VISIBLE,
+    ...(NAVEGADOR === 'chrome' ? { channel: 'chrome' } : {}),
+    args: [
+      '--disable-blink-features=AutomationControlled',
+      ...(VISIBLE || NAVEGADOR === 'chrome' ? ['--autoplay-policy=no-user-gesture-required'] : []),
+      ...(VISIBLE ? [] : ['--headless=new']),
+    ],
   });
+  console.log(`Navegador: ${NAVEGADOR}${VISIBLE ? ' con ventana (pantalla virtual)' : ' sin ventana'}${DIAGNOSTICO ? ', modo diagnostico' : ''}, vids.st en forma /${FORMA_VIDSST}/`);
   const resultados = [];
   try {
     for (let i = 0; i < embeds.length; i += CONCURRENCIA) {
