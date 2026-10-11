@@ -1,0 +1,86 @@
+name: Probar vistas (diagnostico)
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Links a probar (separados por espacio, coma o salto de linea)'
+        required: true
+      navegador:
+        description: 'Navegador a usar'
+        type: choice
+        options: [chrome, chromium]
+        default: chrome
+      visible:
+        description: 'Abrir el navegador con ventana (en una pantalla virtual) en vez de sin ventana'
+        type: boolean
+        default: true
+      forma_vidsst:
+        description: 'Para vids.st: reproducir el link /v/ o el /e/ original'
+        type: choice
+        options: [v, e]
+        default: v
+      segundos:
+        description: 'Segundos de reproduccion por link'
+        default: '240'
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        working-directory: scripts
+        run: npm install
+
+      - name: Instalar navegador
+        working-directory: scripts
+        run: |
+          if [ "${{ inputs.navegador }}" = "chrome" ]; then
+            npx playwright install --with-deps chrome
+          else
+            npx playwright install --with-deps chromium
+          fi
+
+      - name: Preparar links
+        env:
+          URLS_ENTRADA: ${{ inputs.urls }}
+        run: node scripts/preparar-prueba.mjs
+
+      - name: Probar vistas
+        env:
+          ARCHIVO_URLS_A_PROCESAR: urls-a-procesar.json
+          ARCHIVO_RESULTADOS: resultados.json
+          SEGUNDOS_REPRODUCCION: ${{ inputs.segundos }}
+          SEGUNDOS_REPRODUCCION_VIDSST: ${{ inputs.segundos }}
+          CONCURRENCIA: '1'
+          DIAGNOSTICO: '1'
+          NAVEGADOR: ${{ inputs.navegador }}
+          VISIBLE: ${{ inputs.visible && '1' || '0' }}
+          FORMA_VIDSST: ${{ inputs.forma_vidsst }}
+        run: |
+          if [ "$VISIBLE" = "1" ]; then
+            xvfb-run -a --server-args="-screen 0 1366x768x24" node scripts/keepalive-vistas.mjs
+          else
+            node scripts/keepalive-vistas.mjs
+          fi
+
+      - name: Subir capturas y resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prueba-vistas
+          path: |
+            screenshots/
+            resultados.json
+          if-no-files-found: ignore
+          retention-days: 7
