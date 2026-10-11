@@ -17339,5 +17339,28 @@
     "peso": null,
     "agregado": "2026-10-08T23:38:52.631Z",
     "ultimaRevision": "2026-10-08T23:38:52.631Z"
+  },
+  {
+    "imdbId": "tt32393988",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video181095/master.m3u8",
+    "referer": "https://vids.st/e/181095",
+    "embedUrl": "https://vids.st/e/181095",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "HDR"
+    ],
+    "plataforma": null,
+    "titulo": "La noche del demonio: Están entre nosotros",
+    "peso": "7.34 GB",
+    "agregado": "2026-10-11T14:53:01.374Z",
+    "ultimaRevision": "2026-10-11T14:53:01.374Z"
   }
 ]
