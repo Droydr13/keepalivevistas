@@ -7447,5 +7447,24 @@
     "peso": null,
     "agregado": "2026-10-11T16:14:25.624Z",
     "ultimaRevision": "2026-10-11T16:14:25.624Z"
+  },
+  {
+    "imdbId": "tt34621652",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/PtIsXZBLxBjLxVTcH8valqh7RSVUC5tM/master.txt",
+    "embedUrl": "https://playmate.to/embed/z2gnuujKBXNi",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "The Daily Life of a Middle-Aged Online Shopper in Another World",
+    "peso": null,
+    "agregado": "2026-10-11T20:03:30.398Z",
+    "ultimaRevision": "2026-10-11T20:03:30.398Z"
   }
 ]
