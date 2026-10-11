@@ -17362,5 +17362,91 @@
     "peso": "7.34 GB",
     "agregado": "2026-10-11T14:53:01.374Z",
     "ultimaRevision": "2026-10-11T14:53:01.374Z"
+  },
+  {
+    "imdbId": "tt31227572",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video179601/master.m3u8",
+    "referer": "https://vids.st/e/179601",
+    "embedUrl": "https://vids.st/e/179601",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "HDR"
+    ],
+    "plataforma": null,
+    "titulo": "Depredador: Tierras salvajes",
+    "peso": "7.47 GB",
+    "agregado": "2026-10-11T20:04:12.889Z",
+    "ultimaRevision": "2026-10-11T20:04:12.889Z"
+  },
+  {
+    "imdbId": "tt31227572",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video179601/master.m3u8",
+    "referer": "https://vids.st/e/179601",
+    "embedUrl": "https://vids.st/e/179601",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "HDR"
+    ],
+    "plataforma": null,
+    "titulo": "Depredador: Tierras salvajes",
+    "peso": "7.47 GB",
+    "agregado": "2026-10-11T20:04:14.125Z",
+    "ultimaRevision": "2026-10-11T20:04:14.125Z"
+  },
+  {
+    "imdbId": "tt26743760",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 2,
+    "url": "https://vids.st/storage/uploads/video179751/Los-diarios-de-la-boticaria---S03E50-1080p-.mkv",
+    "referer": "https://vids.st/e/179751",
+    "embedUrl": "https://vids.st/e/179751",
+    "idioma": "Japonés",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Los diarios de la boticaria",
+    "peso": null,
+    "agregado": "2026-10-11T20:04:14.935Z",
+    "ultimaRevision": "2026-10-11T20:04:14.935Z"
+  },
+  {
+    "imdbId": "tt26743760",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 2,
+    "url": "https://vids.st/storage/uploads/video179751/Los-diarios-de-la-boticaria---S03E50-1080p-.mkv",
+    "referer": "https://vids.st/e/179751",
+    "embedUrl": "https://vids.st/e/179751",
+    "idioma": "Japonés",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Los diarios de la boticaria",
+    "peso": null,
+    "agregado": "2026-10-11T20:04:16.278Z",
+    "ultimaRevision": "2026-10-11T20:04:16.278Z"
   }
 ]
