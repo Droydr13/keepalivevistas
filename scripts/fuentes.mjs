@@ -1,12 +1,5 @@
 import { readFile } from 'node:fs/promises';
 
-export const ARCHIVOS_DIRECTOS = [
-  'vids-manual-links.json',
-  'vids-direct-contribuciones.json',
-  'firestream-manual-links.json',
-  'firestream-contribuciones.json',
-];
-
 export const ARCHIVOS_PLAYMATE = [
   'playmate-manual-links.json',
   'playmate-contribuciones.json',
@@ -34,12 +27,6 @@ export async function recolectarEmbedsConFecha() {
       mapa.set(url, agregado);
     }
   };
-  for (const archivo of ARCHIVOS_DIRECTOS) {
-    for (const item of await leerJsonSiExiste(archivo)) {
-      const embed = item && (item.referer || item.embedUrl);
-      if (embed) marcar(embed, item.agregado);
-    }
-  }
   for (const archivo of ARCHIVOS_PLAYMATE) {
     for (const item of await leerJsonSiExiste(archivo)) {
       if (item && item.embedUrl) marcar(item.embedUrl, item.agregado);
