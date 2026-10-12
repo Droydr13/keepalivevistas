@@ -17448,5 +17448,112 @@
     "peso": null,
     "agregado": "2026-10-11T20:04:16.278Z",
     "ultimaRevision": "2026-10-11T20:04:16.278Z"
+  },
+  {
+    "imdbId": "tt37614297",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/uploads/video179849/Smoking-Behind-the-Supermarket-with-You---S02E01-1080p-.mkv",
+    "referer": "https://vids.st/e/179849",
+    "embedUrl": "https://vids.st/e/179849",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Crunchyroll",
+    "titulo": "Fumando juntos detrás del súper",
+    "peso": null,
+    "agregado": "2026-10-12T00:55:55.379Z",
+    "ultimaRevision": "2026-10-12T00:55:55.379Z"
+  },
+  {
+    "imdbId": "tt37614297",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 2,
+    "url": "https://vids.st/storage/uploads/video179850/Smoking-Behind-the-Supermarket-with-You---S02E02-1080p-.mkv",
+    "referer": "https://vids.st/e/179850",
+    "embedUrl": "https://vids.st/e/179850",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Crunchyroll",
+    "titulo": "Fumando juntos detrás del súper",
+    "peso": null,
+    "agregado": "2026-10-12T00:55:57.987Z",
+    "ultimaRevision": "2026-10-12T00:55:57.987Z"
+  },
+  {
+    "imdbId": "tt37614297",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://vids.st/storage/uploads/video179852/Smoking-Behind-the-Supermarket-with-You---S02E03-1080p-.mkv",
+    "referer": "https://vids.st/e/179852",
+    "embedUrl": "https://vids.st/e/179852",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Crunchyroll",
+    "titulo": "Fumando juntos detrás del súper",
+    "peso": null,
+    "agregado": "2026-10-12T00:56:00.555Z",
+    "ultimaRevision": "2026-10-12T00:56:00.555Z"
+  },
+  {
+    "imdbId": "tt37614297",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://vids.st/storage/uploads/video179855/Smoking-Behind-the-Supermarket-with-You---S02E04-1080p-.mkv",
+    "referer": "https://vids.st/e/179855",
+    "embedUrl": "https://vids.st/e/179855",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Crunchyroll",
+    "titulo": "Fumando juntos detrás del súper",
+    "peso": null,
+    "agregado": "2026-10-12T00:56:02.101Z",
+    "ultimaRevision": "2026-10-12T00:56:02.101Z"
+  },
+  {
+    "imdbId": "tt28498219",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video181697/master.m3u8",
+    "referer": "https://vids.st/e/181697",
+    "embedUrl": "https://vids.st/e/181697",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Matchbox: La película",
+    "peso": "2.41 GB",
+    "agregado": "2026-10-12T00:56:04.655Z",
+    "ultimaRevision": "2026-10-12T00:56:04.655Z"
   }
 ]
