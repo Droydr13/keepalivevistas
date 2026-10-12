@@ -7638,5 +7638,24 @@
     "peso": null,
     "agregado": "2026-10-12T22:18:09.141Z",
     "ultimaRevision": "2026-10-12T22:18:09.141Z"
+  },
+  {
+    "imdbId": "tt1666278",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 22,
+    "url": "https://frv2.plauymito.live/hls/QN7SnzX5HxakqRsmHVAeK5y466GxiU9w/master.txt",
+    "embedUrl": "https://playmate.to/embed/gCO2mq6bTQnlK",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Stromit",
+    "titulo": "ThunderCats",
+    "peso": null,
+    "agregado": "2026-10-12T22:18:18.825Z",
+    "ultimaRevision": "2026-10-12T22:18:18.825Z"
   }
 ]
