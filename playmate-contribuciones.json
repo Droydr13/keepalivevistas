@@ -7559,5 +7559,27 @@
     "peso": null,
     "agregado": "2026-10-12T18:24:57.325Z",
     "ultimaRevision": "2026-10-12T18:24:57.325Z"
+  },
+  {
+    "imdbId": "tt18312380",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/Qwmt7Sy1a0a1inTSgqHEgfyxliJRkFhY/master.txt",
+    "embedUrl": "https://playmate.to/embed/harI4okMWMei",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Emboscada Salvaje",
+    "peso": "2.61 GB",
+    "agregado": "2026-10-12T19:42:18.838Z",
+    "ultimaRevision": "2026-10-12T19:42:18.838Z"
   }
 ]
