@@ -1202,5 +1202,30 @@
     "peso": null,
     "agregado": "2026-10-08T20:28:08.409Z",
     "ultimaRevision": "2026-10-08T20:28:08.409Z"
+  },
+  {
+    "imdbId": "tt0120004",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/X1NqnRRCjp0Kp9PMyobUi3zVvM7PKnsM/master.txt",
+    "embedUrl": "https://playmate.to/embed/BpREeTXXZS7Uc",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Castellano",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "BRRIP",
+      "AC3 2.0"
+    ],
+    "plataforma": "Playmate",
+    "titulo": "La reliquia",
+    "peso": "5.0GB",
+    "agregado": "2026-10-13T12:43:21.992Z",
+    "ultimaRevision": "2026-10-13T12:43:21.992Z"
   }
 ]
