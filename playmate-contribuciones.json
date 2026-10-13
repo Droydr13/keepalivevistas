@@ -8078,5 +8078,24 @@
     "peso": "2.05 GB",
     "agregado": "2026-10-13T04:20:43.890Z",
     "ultimaRevision": "2026-10-13T04:20:43.890Z"
+  },
+  {
+    "imdbId": "tt27462671",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://frv2.plauymito.live/hls/9hmUx0tSTdDWhayD3RD43fPVZOzcttmB/master.txt",
+    "embedUrl": "https://playmate.to/embed/hWe3yP0Drdj9",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "Isekai One Turn Kill Neesan; Ane Douhan no Isekai Seikatsu Hajimemashita",
+    "peso": null,
+    "agregado": "2026-10-13T04:20:50.725Z",
+    "ultimaRevision": "2026-10-13T04:20:50.725Z"
   }
 ]
