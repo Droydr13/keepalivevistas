@@ -8056,5 +8056,27 @@
     "peso": null,
     "agregado": "2026-10-13T04:20:11.710Z",
     "ultimaRevision": "2026-10-13T04:20:11.710Z"
+  },
+  {
+    "imdbId": "tt31049299",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/0zAmfpEuxpO8WwwK0ynqOhe79m57vvkj/master.txt",
+    "embedUrl": "https://playmate.to/embed/p1DAgHIkes5x",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Animales",
+    "peso": "2.05 GB",
+    "agregado": "2026-10-13T04:20:43.890Z",
+    "ultimaRevision": "2026-10-13T04:20:43.890Z"
   }
 ]
