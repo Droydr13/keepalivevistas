@@ -7847,5 +7847,24 @@
     "peso": null,
     "agregado": "2026-10-13T04:16:42.663Z",
     "ultimaRevision": "2026-10-13T04:16:42.663Z"
+  },
+  {
+    "imdbId": "tt39400589",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/b9Cxk9bGYD2R9r5GszhVcOWVHaTwc9QO/master.txt",
+    "embedUrl": "https://playmate.to/embed/lo70nXDUCWAH",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "Hit viral",
+    "peso": null,
+    "agregado": "2026-10-13T04:16:49.474Z",
+    "ultimaRevision": "2026-10-13T04:16:49.474Z"
   }
 ]
