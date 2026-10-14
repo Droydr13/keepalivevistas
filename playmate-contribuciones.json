@@ -8931,5 +8931,24 @@
     "peso": null,
     "agregado": "2026-10-14T19:47:02.009Z",
     "ultimaRevision": "2026-10-14T19:47:02.009Z"
+  },
+  {
+    "imdbId": "tt31940008",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 6,
+    "url": "https://frv2.plauymito.live/hls/tBFZDcSdtnSXbv7BB8Vi6mzLZFMTmGVD/master.txt",
+    "embedUrl": "https://playmate.to/embed/XrrPFdYz4bjC",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "An Archdemon's Dilemma: How to Love Your Elf Bride",
+    "peso": null,
+    "agregado": "2026-10-14T19:47:25.678Z",
+    "ultimaRevision": "2026-10-14T19:47:25.678Z"
   }
 ]
