@@ -9254,5 +9254,24 @@
     "peso": null,
     "agregado": "2026-10-14T20:01:43.605Z",
     "ultimaRevision": "2026-10-14T20:01:43.605Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/Nx43qLDMcu3HRz88NAcMaw7j409Tm96q/master.txt",
+    "embedUrl": "https://playmate.to/embed/JRQBLiUo7i5E",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-14T20:02:07.053Z",
+    "ultimaRevision": "2026-10-14T20:02:07.053Z"
   }
 ]
