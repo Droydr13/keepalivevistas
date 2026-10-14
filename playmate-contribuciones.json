@@ -8306,5 +8306,24 @@
     "peso": null,
     "agregado": "2026-10-13T04:24:03.738Z",
     "ultimaRevision": "2026-10-13T04:24:03.738Z"
+  },
+  {
+    "imdbId": "tt21209804",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 11,
+    "url": "https://frv2.plauymito.live/hls/bvFhrmWkzumnIVZJ7lofExlvVebrjlQx/master.txt",
+    "embedUrl": "https://playmate.to/embed/p8SIvmSYdg5e",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "MASHLE: MAGIC AND MUSCLES",
+    "peso": null,
+    "agregado": "2026-10-14T19:06:57.406Z",
+    "ultimaRevision": "2026-10-14T19:06:57.406Z"
   }
 ]
