@@ -9197,5 +9197,43 @@
     "peso": null,
     "agregado": "2026-10-14T20:00:43.262Z",
     "ultimaRevision": "2026-10-14T20:00:43.262Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/ayRsZyO6HRFrKDBe9qxJqeB0Ag5fDmWY/master.txt",
+    "embedUrl": "https://playmate.to/embed/3SnPOENbNwwv",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-14T20:00:55.405Z",
+    "ultimaRevision": "2026-10-14T20:00:55.405Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 5,
+    "url": "https://frv2.plauymito.live/hls/rfhTWOhBaRVAIjwiD5cHSAr5NxSlPpuF/master.txt",
+    "embedUrl": "https://playmate.to/embed/amHpDvyhiqVb",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-14T20:01:31.659Z",
+    "ultimaRevision": "2026-10-14T20:01:31.659Z"
   }
 ]
