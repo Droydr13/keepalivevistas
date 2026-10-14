@@ -8776,5 +8776,27 @@
     "peso": null,
     "agregado": "2026-10-14T19:44:13.191Z",
     "ultimaRevision": "2026-10-14T19:44:13.191Z"
+  },
+  {
+    "imdbId": "tt36148135",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://frv2.plauymito.live/hls/I2AOJGZHkP9CzU9dKo87kL1QAhMNPsRk/master.txt",
+    "embedUrl": "https://playmate.to/embed/UwrolRHBBh37",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Solo necesitas matar",
+    "peso": "1.65 GB",
+    "agregado": "2026-10-14T19:44:24.336Z",
+    "ultimaRevision": "2026-10-14T19:44:24.336Z"
   }
 ]
