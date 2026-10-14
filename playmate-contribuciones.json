@@ -8586,5 +8586,24 @@
     "peso": null,
     "agregado": "2026-10-14T19:41:32.402Z",
     "ultimaRevision": "2026-10-14T19:41:32.402Z"
+  },
+  {
+    "imdbId": "tt32552529",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/O1fw5Va3pki5rT5WotMfELIWFxPJJxuE/master.txt",
+    "embedUrl": "https://playmate.to/embed/GQwOIxbgJewm",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Pseudo Harem",
+    "peso": null,
+    "agregado": "2026-10-14T19:41:41.481Z",
+    "ultimaRevision": "2026-10-14T19:41:41.481Z"
   }
 ]
