@@ -18125,5 +18125,113 @@
     "peso": null,
     "agregado": "2026-10-15T01:16:52.803Z",
     "ultimaRevision": "2026-10-15T01:16:52.803Z"
+  },
+  {
+    "imdbId": "tt8438524",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 10,
+    "url": "https://vids.st/storage/uploads/video185416/demonlords2-10.mp4",
+    "referer": "https://vids.st/e/185416",
+    "embedUrl": "https://vids.st/e/185416",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "How Not to Summon a Demon Lord",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:38.746Z",
+    "ultimaRevision": "2026-10-15T21:41:38.747Z"
+  },
+  {
+    "imdbId": "tt8438524",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 10,
+    "url": "https://vids.st/storage/uploads/video185416/demonlords2-10.mp4",
+    "referer": "https://vids.st/e/185416",
+    "embedUrl": "https://vids.st/e/185416",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "How Not to Summon a Demon Lord",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:38.956Z",
+    "ultimaRevision": "2026-10-15T21:41:38.956Z"
+  },
+  {
+    "imdbId": "tt8438524",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 9,
+    "url": "https://vids.st/storage/uploads/video185407/demonlords2-09.mp4",
+    "referer": "https://vids.st/e/185407",
+    "embedUrl": "https://vids.st/e/185407",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "How Not to Summon a Demon Lord",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:40.125Z",
+    "ultimaRevision": "2026-10-15T21:41:40.125Z"
+  },
+  {
+    "imdbId": "tt8438524",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 9,
+    "url": "https://vids.st/storage/uploads/video185407/demonlords2-09.mp4",
+    "referer": "https://vids.st/e/185407",
+    "embedUrl": "https://vids.st/e/185407",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "How Not to Summon a Demon Lord",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:40.406Z",
+    "ultimaRevision": "2026-10-15T21:41:40.406Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/cdn/video185251/master.m3u8",
+    "referer": "https://vids.st/e/185251",
+    "embedUrl": "https://vids.st/e/185251",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:41.531Z",
+    "ultimaRevision": "2026-10-15T21:41:41.531Z"
   }
 ]
