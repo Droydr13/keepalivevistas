@@ -18081,5 +18081,49 @@
     "peso": null,
     "agregado": "2026-10-14T20:07:13.097Z",
     "ultimaRevision": "2026-10-14T20:07:13.097Z"
+  },
+  {
+    "imdbId": "tt6791350",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/cdn/video183213/master.m3u8",
+    "referer": "https://vids.st/e/183213",
+    "embedUrl": "https://vids.st/e/183213",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "4K",
+    "tags": [
+      "HDR"
+    ],
+    "plataforma": null,
+    "titulo": "Guardianes de la Galaxia volumen 3",
+    "peso": "10.26 GB",
+    "agregado": "2026-10-15T01:16:51.450Z",
+    "ultimaRevision": "2026-10-15T01:16:51.450Z"
+  },
+  {
+    "imdbId": "tt8438524",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 12,
+    "url": "https://vids.st/storage/uploads/video185282/remote.mp4",
+    "referer": "https://vids.st/e/185282",
+    "embedUrl": "https://vids.st/e/185282",
+    "idioma": "Japonés",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "How Not to Summon a Demon Lord",
+    "peso": null,
+    "agregado": "2026-10-15T01:16:52.803Z",
+    "ultimaRevision": "2026-10-15T01:16:52.803Z"
   }
 ]
