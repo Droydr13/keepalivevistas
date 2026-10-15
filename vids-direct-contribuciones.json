@@ -18233,5 +18233,53 @@
     "peso": null,
     "agregado": "2026-10-15T21:41:41.531Z",
     "ultimaRevision": "2026-10-15T21:41:41.531Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/cdn/video185251/master.m3u8",
+    "referer": "https://vids.st/e/185251",
+    "embedUrl": "https://vids.st/e/185251",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:42.471Z",
+    "ultimaRevision": "2026-10-15T21:41:42.471Z"
+  },
+  {
+    "imdbId": "tt11540908",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 1,
+    "url": "https://vids.st/storage/cdn/video185251/master.m3u8",
+    "referer": "https://vids.st/e/185251",
+    "embedUrl": "https://vids.st/e/185251",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "prime video",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-10-15T21:41:44.762Z",
+    "ultimaRevision": "2026-10-15T21:41:44.762Z"
   }
 ]
