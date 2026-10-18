@@ -1365,5 +1365,51 @@
     "peso": null,
     "agregado": "2026-10-18T18:54:47.296Z",
     "ultimaRevision": "2026-10-18T18:54:47.296Z"
+  },
+  {
+    "imdbId": "tt4955642",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 7,
+    "url": "https://frv2.plauymito.live/hls/Vtv0cV3l6u7VMJVZI6JN5MrpYRrBsHeE/master.txt",
+    "embedUrl": "https://playmate.to/embed/05kKdgO2IDqN",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "AV1",
+      "HDR"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "El Buen Lugar",
+    "peso": null,
+    "agregado": "2026-10-18T18:54:49.042Z",
+    "ultimaRevision": "2026-10-18T18:54:49.042Z"
+  },
+  {
+    "imdbId": "tt4955642",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 8,
+    "url": "https://frv2.plauymito.live/hls/S5WzAl1cUTte1kssbd4jjhOqqVU6TwJ5/master.txt",
+    "embedUrl": "https://playmate.to/embed/FDA6fsms9SnA",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "AV1",
+      "HDR"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "El Buen Lugar",
+    "peso": null,
+    "agregado": "2026-10-18T18:54:50.727Z",
+    "ultimaRevision": "2026-10-18T18:54:50.727Z"
   }
 ]
