@@ -9654,5 +9654,25 @@
     "peso": "172.51 MB",
     "agregado": "2026-10-18T03:59:15.253Z",
     "ultimaRevision": "2026-10-18T03:59:15.253Z"
+  },
+  {
+    "imdbId": "tt32344704",
+    "tipo": "series",
+    "temporada": 2,
+    "episodio": 3,
+    "url": "https://frv2.plauymito.live/hls/J46DbPjo9hmahnOqd8dUB7n4YuiFU3Lm/master.txt",
+    "embedUrl": "https://playmate.to/embed/HrIa18qQIK2i",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "Tougen Anki",
+    "peso": "426.01 MB",
+    "agregado": "2026-10-18T03:59:23.854Z",
+    "ultimaRevision": "2026-10-18T03:59:23.854Z"
   }
 ]
