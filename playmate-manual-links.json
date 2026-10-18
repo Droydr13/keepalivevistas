@@ -1242,12 +1242,13 @@
     ],
     "calidad": "1080p",
     "tags": [
-      "H264"
+      "AV1",
+      "HDR"
     ],
     "plataforma": "Netflix",
     "titulo": "El Buen Lugar",
     "peso": null,
-    "agregado": "2026-10-15T04:31:54.108Z",
-    "ultimaRevision": "2026-10-15T04:31:54.108Z"
+    "agregado": "2026-10-18T18:54:37.568Z",
+    "ultimaRevision": "2026-10-18T18:54:37.568Z"
   }
 ]
