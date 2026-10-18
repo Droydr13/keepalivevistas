@@ -1457,5 +1457,28 @@
     "peso": null,
     "agregado": "2026-10-18T18:59:35.832Z",
     "ultimaRevision": "2026-10-18T18:59:35.832Z"
+  },
+  {
+    "imdbId": "tt4955642",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 12,
+    "url": "https://frv2.plauymito.live/hls/wGGbIcCZduFogvbRIvag3foCMR89MxHZ/master.txt",
+    "embedUrl": "https://playmate.to/embed/5Zen74ixPHeP",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "AV1",
+      "HDR"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "El Buen Lugar",
+    "peso": null,
+    "agregado": "2026-10-18T19:00:31.941Z",
+    "ultimaRevision": "2026-10-18T19:00:31.941Z"
   }
 ]
