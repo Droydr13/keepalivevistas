@@ -22011,5 +22011,121 @@
     "peso": null,
     "agregado": "2026-10-19T23:36:10.701Z",
     "ultimaRevision": "2026-10-19T23:36:10.701Z"
+  },
+  {
+    "imdbId": "tt9054364",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 15,
+    "url": "https://cdn.vids.st/video186622/master.m3u8",
+    "referer": "https://vids.st/e/186622",
+    "embedUrl": "https://vids.st/e/186622",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés",
+      "Japonés",
+      "Portugués",
+      "Francés",
+      "Italiano",
+      "Alemán"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "That Time I Got Reincarnated as a Slime",
+    "peso": null,
+    "agregado": "2026-10-19T23:36:11.277Z",
+    "ultimaRevision": "2026-10-19T23:36:11.277Z"
+  },
+  {
+    "imdbId": "tt9054364",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 17,
+    "url": "https://cdn.vids.st/video186624/master.m3u8",
+    "referer": "https://vids.st/e/186624",
+    "embedUrl": "https://vids.st/e/186624",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés",
+      "Japonés",
+      "Portugués",
+      "Francés",
+      "Italiano",
+      "Alemán"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "That Time I Got Reincarnated as a Slime",
+    "peso": null,
+    "agregado": "2026-10-19T23:36:11.428Z",
+    "ultimaRevision": "2026-10-19T23:36:11.428Z"
+  },
+  {
+    "imdbId": "tt9054364",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 16,
+    "url": "https://cdn.vids.st/video186623/master.m3u8",
+    "referer": "https://vids.st/e/186623",
+    "embedUrl": "https://vids.st/e/186623",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés",
+      "Japonés",
+      "Portugués",
+      "Francés",
+      "Italiano",
+      "Alemán"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "That Time I Got Reincarnated as a Slime",
+    "peso": null,
+    "agregado": "2026-10-19T23:36:12.476Z",
+    "ultimaRevision": "2026-10-19T23:36:12.476Z"
+  },
+  {
+    "imdbId": "tt9054364",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 15,
+    "url": "https://cdn.vids.st/video186622/master.m3u8",
+    "referer": "https://vids.st/e/186622",
+    "embedUrl": "https://vids.st/e/186622",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés",
+      "Japonés",
+      "Portugués",
+      "Francés",
+      "Italiano",
+      "Alemán"
+    ],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "AAC"
+    ],
+    "plataforma": "Crunchyroll",
+    "titulo": "That Time I Got Reincarnated as a Slime",
+    "peso": null,
+    "agregado": "2026-10-19T23:36:13.526Z",
+    "ultimaRevision": "2026-10-19T23:36:13.526Z"
   }
 ]
