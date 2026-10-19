@@ -1540,5 +1540,25 @@
     "peso": null,
     "agregado": "2026-10-19T22:27:29.249Z",
     "ultimaRevision": "2026-10-19T22:27:29.249Z"
+  },
+  {
+    "imdbId": "tt26693803",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 4,
+    "url": "https://frv2.plauymito.live/hls/rEiq4Qq0rlefBMCqFIUCaBk1mYIKfakP/master.txt",
+    "embedUrl": "https://playmate.to/embed/GNM3QU0F2iM1",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL"
+    ],
+    "plataforma": "Netflix",
+    "titulo": "King the Land",
+    "peso": null,
+    "agregado": "2026-10-19T22:27:31.136Z",
+    "ultimaRevision": "2026-10-19T22:27:31.136Z"
   }
 ]
