@@ -297,5 +297,28 @@
     "peso": "3.22 GB",
     "agregado": "2026-10-20T00:59:42.174Z",
     "ultimaRevision": "2026-10-20T00:59:42.174Z"
+  },
+  {
+    "imdbId": "tt0071790",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video187006/Madhouse.1974.1080p.BluRay.Dual.Latino.mkv",
+    "referer": "https://vids.st/e/187006",
+    "embedUrl": "https://vids.st/e/187006",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "La mansión sangrienta",
+    "peso": "1.97 GB",
+    "agregado": "2026-10-20T01:30:35.459Z",
+    "ultimaRevision": "2026-10-20T01:30:35.459Z"
   }
 ]
