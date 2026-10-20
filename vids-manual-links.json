@@ -254,5 +254,28 @@
     "peso": "1.09 GB",
     "agregado": "2026-10-05T01:09:47.271Z",
     "ultimaRevision": "2026-10-05T01:09:47.271Z"
+  },
+  {
+    "imdbId": "tt0090327",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video186997/Juego-Diab-lico-1986-.mkv",
+    "referer": "https://vids.st/e/186997",
+    "embedUrl": "https://vids.st/e/186997",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "Witchboard: Juego diabólico",
+    "peso": "3.45 GB",
+    "agregado": "2026-10-20T00:12:44.028Z",
+    "ultimaRevision": "2026-10-20T00:12:44.028Z"
   }
 ]
