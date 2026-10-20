@@ -277,5 +277,25 @@
     "peso": "3.45 GB",
     "agregado": "2026-10-20T00:12:44.028Z",
     "ultimaRevision": "2026-10-20T00:12:44.028Z"
+  },
+  {
+    "imdbId": "tt0071627",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video187003/La-Casa-de-los-Siete-Muertos-1974-.mkv",
+    "referer": "https://vids.st/e/187003",
+    "embedUrl": "https://vids.st/e/187003",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264"
+    ],
+    "plataforma": null,
+    "titulo": "La Casa de los Siete Muertos",
+    "peso": "3.22 GB",
+    "agregado": "2026-10-20T00:59:42.174Z",
+    "ultimaRevision": "2026-10-20T00:59:42.174Z"
   }
 ]
