@@ -24187,5 +24187,23 @@
     "peso": null,
     "agregado": "2026-10-20T00:13:05.420Z",
     "ultimaRevision": "2026-10-20T00:13:05.420Z"
+  },
+  {
+    "imdbId": "tt0063759",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video187447/Ingmar-Bergman-La-hora-del-lobo-1968-Subt-tulos-espa-ol-1080p-medium-.mkv",
+    "referer": "https://vids.st/e/187447",
+    "embedUrl": "https://vids.st/e/187447",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "La hora del lobo",
+    "peso": null,
+    "agregado": "2026-10-21T00:46:48.955Z",
+    "ultimaRevision": "2026-10-21T00:46:48.956Z"
   }
 ]
