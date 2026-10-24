@@ -24566,5 +24566,26 @@
     "peso": null,
     "agregado": "2026-10-24T02:36:18.088Z",
     "ultimaRevision": "2026-10-24T02:36:18.088Z"
+  },
+  {
+    "imdbId": "tt0209163",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video189314/La-momia-regresa.mkv",
+    "referer": "https://vids.st/e/189314",
+    "embedUrl": "https://vids.st/e/189314",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Universal+",
+    "titulo": "La Momia Regresa",
+    "peso": null,
+    "agregado": "2026-10-24T02:36:20.187Z",
+    "ultimaRevision": "2026-10-24T02:36:20.187Z"
   }
 ]
