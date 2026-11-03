@@ -26251,5 +26251,68 @@
     "peso": "1.8GB",
     "agregado": "2026-11-03T20:34:55.063Z",
     "ultimaRevision": "2026-11-03T20:34:55.063Z"
+  },
+  {
+    "imdbId": "tt50389959",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194484/Una.Historia.de.Derry.2026.WEB-DL.1080p-Dual-Lat.mkv",
+    "referer": "https://vids.st/e/194484",
+    "embedUrl": "https://vids.st/e/194484",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "Una historia de Derry",
+    "peso": "1.8GB",
+    "agregado": "2026-11-03T20:34:55.079Z",
+    "ultimaRevision": "2026-11-03T20:34:55.079Z"
+  },
+  {
+    "imdbId": "tt0107688",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video193638/The-Nightmare-Before-Christmas-1080p-TRIAL-id_9479.mkv",
+    "referer": "https://vids.st/e/193638",
+    "embedUrl": "https://vids.st/e/193638",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Disney+",
+    "titulo": "El extraño mundo de Jack",
+    "peso": "3.7GB",
+    "agregado": "2026-11-03T20:42:09.949Z",
+    "ultimaRevision": "2026-11-03T20:42:09.949Z"
+  },
+  {
+    "imdbId": "tt35538033",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194513/Resident-Evil-1080p-DUAL.mkv",
+    "referer": "https://vids.st/e/194513",
+    "embedUrl": "https://vids.st/e/194513",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "Resident Evil: Noche cero",
+    "peso": "6.1GB",
+    "agregado": "2026-11-03T20:42:22.337Z",
+    "ultimaRevision": "2026-11-03T20:42:22.337Z"
   }
 ]
