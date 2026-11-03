@@ -26314,5 +26314,212 @@
     "peso": "6.1GB",
     "agregado": "2026-11-03T20:42:22.337Z",
     "ultimaRevision": "2026-11-03T20:42:22.337Z"
+  },
+  {
+    "imdbId": "tt21285562",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194046/The-Dog-Stars-1080p-DUAL.mkv",
+    "referer": "https://vids.st/e/194046",
+    "embedUrl": "https://vids.st/e/194046",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Disney+",
+    "titulo": "La guerra de los últimos",
+    "peso": "5.8GB",
+    "agregado": "2026-11-03T20:47:40.543Z",
+    "ultimaRevision": "2026-11-03T20:47:40.543Z"
+  },
+  {
+    "imdbId": "tt35511966",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194065/La-bola-negra-1080p.mkv",
+    "referer": "https://vids.st/e/194065",
+    "embedUrl": "https://vids.st/e/194065",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Netflix",
+    "titulo": "La bola negra",
+    "peso": "10GB",
+    "agregado": "2026-11-03T20:47:41.625Z",
+    "ultimaRevision": "2026-11-03T20:47:41.625Z"
+  },
+  {
+    "imdbId": "tt1756855",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194048/Coyote-Vs-Acme-1080p-DUAL.mkv",
+    "referer": "https://vids.st/e/194048",
+    "embedUrl": "https://vids.st/e/194048",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "Coyote vs. Acme",
+    "peso": "7GB",
+    "agregado": "2026-11-03T20:47:42.736Z",
+    "ultimaRevision": "2026-11-03T20:47:42.736Z"
+  },
+  {
+    "imdbId": "tt4172430",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video194220/6614.mp4",
+    "referer": "https://vids.st/e/194220",
+    "embedUrl": "https://vids.st/e/194220",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "13 Horas: Los soldados secretos de Bengasi",
+    "peso": "1.63 GB",
+    "agregado": "2026-11-03T20:47:43.833Z",
+    "ultimaRevision": "2026-11-03T20:47:43.833Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 15,
+    "url": "https://cdn.vids.st/video194255/The_Pitt_S01E15_Listo.mkv",
+    "referer": "https://vids.st/e/194255",
+    "embedUrl": "https://vids.st/e/194255",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:44.890Z",
+    "ultimaRevision": "2026-11-03T20:47:44.890Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 14,
+    "url": "https://cdn.vids.st/video194249/The_Pitt_S01E14_Listo.mkv",
+    "referer": "https://vids.st/e/194249",
+    "embedUrl": "https://vids.st/e/194249",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:45.953Z",
+    "ultimaRevision": "2026-11-03T20:47:45.953Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 13,
+    "url": "https://cdn.vids.st/video194234/The-Pitt-S01E13.mkv",
+    "referer": "https://vids.st/e/194234",
+    "embedUrl": "https://vids.st/e/194234",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:47.010Z",
+    "ultimaRevision": "2026-11-03T20:47:47.010Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 12,
+    "url": "https://cdn.vids.st/video194202/The-Pitt-S01E12.mkv",
+    "referer": "https://vids.st/e/194202",
+    "embedUrl": "https://vids.st/e/194202",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:48.066Z",
+    "ultimaRevision": "2026-11-03T20:47:48.066Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 11,
+    "url": "https://cdn.vids.st/video194200/The-Pitt-S01E11.mkv",
+    "referer": "https://vids.st/e/194200",
+    "embedUrl": "https://vids.st/e/194200",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:49.280Z",
+    "ultimaRevision": "2026-11-03T20:47:49.280Z"
+  },
+  {
+    "imdbId": "tt31938062",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 10,
+    "url": "https://cdn.vids.st/video194196/The-Pitt-S01E10.mkv",
+    "referer": "https://vids.st/e/194196",
+    "embedUrl": "https://vids.st/e/194196",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "HBO MAX",
+    "titulo": "The Pitt",
+    "peso": "3GB",
+    "agregado": "2026-11-03T20:47:50.350Z",
+    "ultimaRevision": "2026-11-03T20:47:50.350Z"
   }
 ]
