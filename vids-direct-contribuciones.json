@@ -27862,5 +27862,62 @@
     "peso": null,
     "agregado": "2026-11-19T21:17:38.453Z",
     "ultimaRevision": "2026-11-19T21:17:38.453Z"
+  },
+  {
+    "imdbId": "tt3518106",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video197732/Ilusi-n-nacional.mp4",
+    "referer": "https://vids.st/e/197732",
+    "embedUrl": "https://vids.st/e/197732",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": null,
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Ilusión Nacional",
+    "peso": null,
+    "agregado": "2026-11-19T21:45:18.708Z",
+    "ultimaRevision": "2026-11-19T21:45:18.708Z"
+  },
+  {
+    "imdbId": "tt3518106",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video197732/Ilusi-n-nacional.mp4",
+    "referer": "https://vids.st/e/197732",
+    "embedUrl": "https://vids.st/e/197732",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": null,
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Ilusión Nacional",
+    "peso": null,
+    "agregado": "2026-11-19T21:45:19.047Z",
+    "ultimaRevision": "2026-11-19T21:45:19.047Z"
+  },
+  {
+    "imdbId": "tt12439850",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video195896/72561.mkv",
+    "referer": "https://vids.st/e/195896",
+    "embedUrl": "https://vids.st/e/195896",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [],
+    "plataforma": "Filmin",
+    "titulo": "The Gigantes",
+    "peso": "4.16GB",
+    "agregado": "2026-11-19T21:45:19.392Z",
+    "ultimaRevision": "2026-11-19T21:45:19.392Z"
   }
 ]
