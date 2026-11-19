@@ -27694,5 +27694,173 @@
     "peso": null,
     "agregado": "2026-11-19T21:02:32.339Z",
     "ultimaRevision": "2026-11-19T21:02:32.339Z"
+  },
+  {
+    "imdbId": "tt7214954",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199975/remote.mp4",
+    "referer": "https://vids.st/e/199975",
+    "embedUrl": "https://vids.st/e/199975",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "AppleTV+",
+    "titulo": "Luck",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:35.931Z",
+    "ultimaRevision": "2026-11-19T21:17:35.931Z"
+  },
+  {
+    "imdbId": "tt1939659",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199976/remote.mp4",
+    "referer": "https://vids.st/e/199976",
+    "embedUrl": "https://vids.st/e/199976",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:36.277Z",
+    "ultimaRevision": "2026-11-19T21:17:36.277Z"
+  },
+  {
+    "imdbId": "tt31189814",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199972/remote.mp4",
+    "referer": "https://vids.st/e/199972",
+    "embedUrl": "https://vids.st/e/199972",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Zona de riesgo",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:36.619Z",
+    "ultimaRevision": "2026-11-19T21:17:36.619Z"
+  },
+  {
+    "imdbId": "tt1939659",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199976/remote.mp4",
+    "referer": "https://vids.st/e/199976",
+    "embedUrl": "https://vids.st/e/199976",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Carrie",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:36.962Z",
+    "ultimaRevision": "2026-11-19T21:17:36.962Z"
+  },
+  {
+    "imdbId": "tt31189814",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199972/remote.mp4",
+    "referer": "https://vids.st/e/199972",
+    "embedUrl": "https://vids.st/e/199972",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "HBO MAX",
+    "titulo": "Zona de riesgo",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:37.306Z",
+    "ultimaRevision": "2026-11-19T21:17:37.306Z"
+  },
+  {
+    "imdbId": "tt4154796",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video199969/remote.mp4",
+    "referer": "https://vids.st/e/199969",
+    "embedUrl": "https://vids.st/e/199969",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "SDR",
+      "AC3 5.1"
+    ],
+    "plataforma": "Disney+",
+    "titulo": "Avengers: Endgame",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:37.865Z",
+    "ultimaRevision": "2026-11-19T21:17:37.865Z"
+  },
+  {
+    "imdbId": "tt2169326",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://vids.st/storage/uploads/video197734/Gimme-The-Power.mp4",
+    "referer": "https://vids.st/e/197734",
+    "embedUrl": "https://vids.st/e/197734",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": null,
+    "tags": [],
+    "plataforma": null,
+    "titulo": "Gimme the Power",
+    "peso": null,
+    "agregado": "2026-11-19T21:17:38.453Z",
+    "ultimaRevision": "2026-11-19T21:17:38.453Z"
   }
 ]
