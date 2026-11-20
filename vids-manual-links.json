@@ -346,5 +346,27 @@
     "peso": "3.6 GB",
     "agregado": "2026-11-20T02:31:21.201Z",
     "ultimaRevision": "2026-11-20T02:31:21.201Z"
+  },
+  {
+    "imdbId": "tt16358384",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 6,
+    "url": "https://cdn.vids.st/video200893/tulsa-king-4x06-lat.mkv",
+    "referer": "https://vids.st/e/200893",
+    "embedUrl": "https://vids.st/e/200893",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "HDTV",
+      "AAC"
+    ],
+    "plataforma": "Paramount+",
+    "titulo": "Tulsa King",
+    "peso": "600M",
+    "agregado": "2026-11-20T18:14:25.914Z",
+    "ultimaRevision": "2026-11-20T18:14:25.914Z"
   }
 ]
