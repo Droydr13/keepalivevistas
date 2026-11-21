@@ -368,5 +368,27 @@
     "peso": "600M",
     "agregado": "2026-11-20T18:14:25.914Z",
     "ultimaRevision": "2026-11-20T18:14:25.914Z"
+  },
+  {
+    "imdbId": "tt43650419",
+    "tipo": "series",
+    "temporada": 1,
+    "episodio": 8,
+    "url": "https://cdn.vids.st/video201101/95443.mp4",
+    "referer": "https://vids.st/e/201101",
+    "embedUrl": "https://vids.st/e/201101",
+    "idioma": "Subtitulado",
+    "idiomaDetalle": [],
+    "calidad": "1080p",
+    "tags": [
+      "AV1",
+      "HDTV",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "貸した魔力は【リボ払い】で強制徴収",
+    "peso": "170M",
+    "agregado": "2026-11-21T19:38:31.618Z",
+    "ultimaRevision": "2026-11-21T19:38:31.618Z"
   }
 ]
