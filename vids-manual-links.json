@@ -390,5 +390,32 @@
     "peso": "170M",
     "agregado": "2026-11-21T19:38:31.618Z",
     "ultimaRevision": "2026-11-21T19:38:31.618Z"
+  },
+  {
+    "imdbId": "tt21454134",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video201174/The-Bikeriders.mp4",
+    "referer": "https://vids.st/e/201174",
+    "embedUrl": "https://vids.st/e/201174",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Castellano",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL",
+      "EAC3",
+      "ATMOS"
+    ],
+    "plataforma": null,
+    "titulo": "El club de los vándalos",
+    "peso": "4.5GB",
+    "agregado": "2026-11-22T03:18:45.750Z",
+    "ultimaRevision": "2026-11-22T03:18:45.751Z"
   }
 ]
