@@ -517,5 +517,23 @@
     "peso": "1.6GB",
     "agregado": "2026-11-27T18:20:11.010Z",
     "ultimaRevision": "2026-11-27T18:20:11.011Z"
+  },
+  {
+    "imdbId": "tt0093170",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video202983/Los-hombres-detr-s-del-Sol-1988-DVDRip.mp4",
+    "referer": "https://vids.st/e/202983",
+    "embedUrl": "https://vids.st/e/202983",
+    "idioma": "Castellano",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [],
+    "plataforma": null,
+    "titulo": "黑太陽731",
+    "peso": "300",
+    "agregado": "2026-11-27T18:41:13.973Z",
+    "ultimaRevision": "2026-11-27T18:41:13.973Z"
   }
 ]
