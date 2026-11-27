@@ -492,5 +492,30 @@
     "peso": "900M",
     "agregado": "2026-11-27T16:45:58.635Z",
     "ultimaRevision": "2026-11-27T16:45:58.636Z"
+  },
+  {
+    "imdbId": "tt16358384",
+    "tipo": "series",
+    "temporada": 4,
+    "episodio": 7,
+    "url": "https://cdn.vids.st/video202977/97031.mkv",
+    "referer": "https://vids.st/e/202977",
+    "embedUrl": "https://vids.st/e/202977",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL",
+      "EAC3"
+    ],
+    "plataforma": "Paramount+",
+    "titulo": "Tulsa King",
+    "peso": "1.6GB",
+    "agregado": "2026-11-27T18:20:11.010Z",
+    "ultimaRevision": "2026-11-27T18:20:11.011Z"
   }
 ]
