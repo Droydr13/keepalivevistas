@@ -465,5 +465,32 @@
     "peso": "400M",
     "agregado": "2026-11-27T03:47:28.329Z",
     "ultimaRevision": "2026-11-27T03:47:28.329Z"
+  },
+  {
+    "imdbId": "tt26743760",
+    "tipo": "series",
+    "temporada": 3,
+    "episodio": 9,
+    "url": "https://cdn.vids.st/video202963/97042.mkv",
+    "referer": "https://vids.st/e/202963",
+    "embedUrl": "https://vids.st/e/202963",
+    "idioma": "Multi",
+    "idiomaDetalle": [
+      "Latino",
+      "Castellano",
+      "Inglés",
+      "Japonés"
+    ],
+    "calidad": "1080p",
+    "tags": [
+      "H264",
+      "WEB-DL",
+      "EAC3"
+    ],
+    "plataforma": "TOKYO MX",
+    "titulo": "Los diarios de la boticaria",
+    "peso": "900M",
+    "agregado": "2026-11-27T16:45:58.635Z",
+    "ultimaRevision": "2026-11-27T16:45:58.636Z"
   }
 ]
