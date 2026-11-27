@@ -417,5 +417,31 @@
     "peso": "4.5GB",
     "agregado": "2026-11-22T03:18:45.750Z",
     "ultimaRevision": "2026-11-22T03:18:45.751Z"
+  },
+  {
+    "imdbId": "tt2131532",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video202785/Hide-2015-.mp4",
+    "referer": "https://vids.st/e/202785",
+    "embedUrl": "https://vids.st/e/202785",
+    "idioma": "Dual",
+    "idiomaDetalle": [
+      "Latino",
+      "Inglés"
+    ],
+    "calidad": null,
+    "tags": [
+      "H264",
+      "AC3 5.1",
+      "ATMOS",
+      "60 FPS"
+    ],
+    "plataforma": null,
+    "titulo": "Hidden: Terror en Kingsville",
+    "peso": "6GB",
+    "agregado": "2026-11-27T00:32:19.967Z",
+    "ultimaRevision": "2026-11-27T00:32:19.967Z"
   }
 ]
