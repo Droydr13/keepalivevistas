@@ -443,5 +443,27 @@
     "peso": "6GB",
     "agregado": "2026-11-27T00:32:19.967Z",
     "ultimaRevision": "2026-11-27T00:32:19.967Z"
+  },
+  {
+    "imdbId": "tt0443536",
+    "tipo": "movie",
+    "temporada": null,
+    "episodio": null,
+    "url": "https://cdn.vids.st/video202835/master.mp4",
+    "referer": "https://vids.st/e/202835",
+    "embedUrl": "https://vids.st/e/202835",
+    "idioma": "Latino",
+    "idiomaDetalle": [],
+    "calidad": "720p",
+    "tags": [
+      "H264",
+      "WEB-DL",
+      "AAC"
+    ],
+    "plataforma": null,
+    "titulo": "¡Buza Caperuza! La verdadera historia",
+    "peso": "400M",
+    "agregado": "2026-11-27T03:47:28.329Z",
+    "ultimaRevision": "2026-11-27T03:47:28.329Z"
   }
 ]
